@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{post.title}} | {{blog.title}}</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no" />
+  <meta name="description" content="{{config.app.blog.description}}" />
+
+  <link rel="alternate" type="application/rss+xml" title="{{config.app.blog.title}} Feed" href="{{config.app.url}}rss" />
+
+  <link href="{{blog.url}}public/themes/{{blog.theme}}/assets/css/style.css" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=latin,cyrillic-ext" rel="stylesheet" />
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <aside>
+
+    {{> aside}}
+
+  </aside>
+  <section id="content">
+    <div class="post">
+      <h2>{{{post.title}}}</h2>
+      <div class="header">
+        <span class="date">{{#format_date_with_locale post.date '%A %e %B %Y'}}</span>
+        {{#if post.metas.author}}
+         by <span class="author">{{{post.metas.author.name}}}</span>
+        {{/if}}
+        {{#if post.metas.tags}}
+          <span class="tags">
+            <ul>Tags:
+              {{#each post.metas.tags}}
+                <li>
+                  {{{.}}}
+                </li>
+              {{/each}}
+            </ul>
+          </span>
+        {{/if}}
+      </div>
+      {{{post.body}}}
+    </div>
+    {{!> comments}}
+  </section>
+</body>
+</html>

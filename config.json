@@ -1,0 +1,80 @@
+{
+    "development": {
+        "blog": {
+            "timezone": "Europe/Rome",
+            "locale": "it_IT.UTF-8",
+            "url": "http://kissblog.dev/",
+            "title": "Kiss Blog",
+            "description": "Keep It Simple, Stupid...",
+            "logo": "logo.png",
+            "authors": {
+              "admin": {
+                "name": "Peter Griffin",
+                "bio": "Basically, I'm a fatass (that's what Stewie always says)",
+                "instagram": "peterpumpkineater69",
+                "facebook": "addifyouuse",
+                "email": "petersmail@prvd.oln",
+                "pic": "peter.png"
+              },
+              "id-of-an-author": {
+                "name": "John Doe",
+                "bio": "Just a simple bio here...",
+                "twitter": "jhonny",
+                "facebook": "john.doe",
+                "email": "john@doe.com"
+              }
+            },
+            "theme": "default",
+            "posts": {
+                "dir": "posts",
+                "perpage": 5
+            },
+            "pages": {
+              "dir": "pages"
+            },
+            "navigation": [
+              {"url": "/","label": "Home"},
+              {"url": "/shortcode","label": "Sample page"}
+            ]
+        }
+    },
+    "production": {
+        "blog": {
+            "timezone": "America/Los_Angeles",
+            "locale": "en_US.UTF-8",
+            "url": "http://kissblog.dev/",
+            "title": "Kiss Blog",
+            "description": "Keep It Simple, Stupid...",
+            "logo": "logo.png",
+            "authors": {
+              "admin": {
+                "name": "Peter Griffin",
+                "bio": "Basically, I'm a fatass (that's what Stewie always says)",
+                "instagram": "peterpumpkineater69",
+                "facebook": "addifyouuse",
+                "email": "petersmail@prvd.oln",
+                "pic": "peter.png"
+              },
+              "id-of-an-author": {
+                "name": "John Doe",
+                "bio": "Just a simple bio here...",
+                "twitter": "jhonny",
+                "facebook": "john.doe",
+                "email": "john@doe.com"
+              }
+            },
+            "theme": "default",
+            "posts": {
+                "dir": "posts",
+                "perpage": 5
+            },
+            "pages": {
+              "dir": "pages"
+            },
+            "navigation": [
+              {"url": "/","label": "Home"},
+              {"url": "/shortcode","label": "Sample page"}
+            ]
+        }
+    }
+}

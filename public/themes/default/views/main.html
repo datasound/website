@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{blog.title}}</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no" />
+  <meta name="description" content="{{blog.description}}" />
+
+  <link rel="alternate" type="application/rss+xml" title="{{blog.title}} Feed" href="{{blog.url}}rss" />
+
+  <link href="{{blog.url}}public/themes/{{blog.theme}}/assets/css/style.css" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=latin,cyrillic-ext" rel="stylesheet" />
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <aside>
+
+    {{> aside}}
+
+  </aside>
+
+  <section id="content">
+
+    {{#each posts}}
+      <div class="post">
+        <h2><a href="{{url}}">{{title}}</a></h2>
+        <div class="header">
+          <span class="date">{{#format_date_with_locale date '%A %e %B %Y'}}</span>
+          {{#if metas.author}}
+           by <span class="author">{{{metas.author.name}}}</span>
+          {{/if}}
+          {{#if metas.tags}}
+            <span class="tags">
+              <ul>Tags:
+                {{#each metas.tags}}
+                  <li>
+                    {{{.}}}
+                  </li>
+                {{/each}}
+              </ul>
+            </span>
+          {{/if}}
+        </div>
+        {{#if metas.image}}
+          <img alt="{{title}}" src="{{metas.image}}" class="post-cover">
+          {{#excerpt body 80 '…'}}
+        {{else}}
+          {{#excerpt body 120 '…'}}
+        {{/if}}
+      </div>
+    {{/each}}
+
+    {{#if has_pagination.prev}}
+      <a href="{{blog.url}}page/{{has_pagination.prevpage}}" class="pagination-arrow newer">Newer</a>
+    {{/if}}
+    {{#if has_pagination.next}}
+      <a href="{{blog.url}}page/{{has_pagination.nextpage}}" class="pagination-arrow older">Older</a>
+    {{/if}}
+
+  </section>
+
+</body>
+</html>

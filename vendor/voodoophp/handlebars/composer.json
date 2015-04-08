@@ -1,0 +1,30 @@
+{
+    "name": "voodoophp/handlebars",
+    "description": "Handlebars processor for php",
+    "homepage": "http://voodoophp.org/docs/handlebars",
+    "keywords": ["templating", "mustache", "handlebars"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fzerorubigd",
+            "email": "fzerorubigd@gmail.com"
+        },
+        {
+            "name": "Behrooz Shabani (everplays)",
+            "email": "everplays@gmail.com"
+        },
+        {
+            "name": "Mardix",
+            "homepage": "https://github.com/mardix"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Handlebars": "src/"
+        }
+    }
+}
