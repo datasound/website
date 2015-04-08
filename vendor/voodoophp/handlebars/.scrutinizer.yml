@@ -1,3 +1,0 @@
-inherit: true
-tools:
-    php_code_coverage: true
