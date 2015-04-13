@@ -24,7 +24,7 @@ if(getenv("env")=="production") {
 
 try {
   # Getting configuration from config.json
-  $config = Yaml::parse(file_get_contents((getenv("env") == 'production') ? 'production' : 'development'.".yaml"), true);
+  $config = Yaml::parse(file_get_contents((getenv("env") == 'production') ? 'config-production' : 'config' .".yaml"), true);
 } catch(\Exception $e) {
   die($e->getMessage());
   exit;
