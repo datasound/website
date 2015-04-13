@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{{#if page.metas.title}}{{{page.metas.title}}} | {{/if}}{{blog.title}}</title>
+  <title>{{#if page.title}}{{{page.title}}} | {{/if}}{{blog.title}}</title>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,7 +27,7 @@
   </aside>
   <section id="content">
     <div class="post">
-      <h2>{{{page.metas.title}}}</h2>
+      <h2>{{{page.title}}}</h2>
       {{{page.body}}}
     </div>
     {{!> comments}}

@@ -1,11 +1,8 @@
-{
-  "title":"Sample Post",
-  "author":"admin",
-  "tags":[
-    "Hello World"
-  ]
-}
----:endmetadata:---
+title: Sample Post
+author: admin
+tags:
+  - Hello World
+----------
 ## Hi!
 
 ### This is a sample post...

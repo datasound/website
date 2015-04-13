@@ -2,6 +2,7 @@
 namespace KISSBlog;
 
 use \ParsedownExtra;
+use Symfony\Component\Yaml\Yaml;
 
 /* General Blog Functions */
 class BlogManager {
@@ -14,11 +15,11 @@ class BlogManager {
   private $authors;
 
   public function __construct($config) {
-    $this->articleDir = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . $config->blog->posts->dir . DIRECTORY_SEPARATOR;
-    $this->postPerPage = $config->blog->posts->perpage;
-    $this->siteUrl = $config->blog->url;
-    $this->pageDir = $config->blog->pages->dir;
-    $this->authors = $config->blog->authors;
+    $this->articleDir = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . $config['posts']['dir'] . DIRECTORY_SEPARATOR;
+    $this->postPerPage = $config['posts']['perpage'];
+    $this->siteUrl = $config['url'];
+    $this->pageDir = $config['pages']['dir'];
+    $this->authors = $config['authors'];
   }
 
   public function get_page($pageName) {
@@ -28,21 +29,20 @@ class BlogManager {
     if(!file_exists($filePath))
       return;
     $pageContent = file_get_contents($filePath);
-    $matches = array();
-    preg_match('/[\s\S]*[-]+:endmetadata:[-]+/', $pageContent, $matches);
+    $metasAndContent = preg_split('/-{3,}/', $pageContent, 2);
     # if we have metadata defined
-    if(count($matches)>0){
-      $metadata = preg_replace('/[-]+:endmetadata:[-]+/', "", $matches[0]);
-      $page->metas = json_decode($metadata);
-      $pageContent = preg_replace('/[\s\S]*[-]+:endmetadata:[-]+/', "", $pageContent);
+    if(count($metasAndContent)==2){
+      $metadata = $metasAndContent[0];
+      $page->metas = Yaml::parse($metadata);
+      $pageContent = $metasAndContent[1];
       $content = $parsedown->text($pageContent);
-      $page->title = $page->metas->title;
+      $page->title = $page->metas['title'];
     } else {
       // Get the contents and convert it to HTML
       $content = $parsedown->text($pageContent);
       // Extract the title and body
-      $arr = explode('</h1>', $content);
-      $page->title = str_replace('<h1>','',$arr[0]);
+      $arr = preg_split('/<\/h1>/', $content, 2);
+      $page->title = str_replace('<h1>','', $arr[0]);;
       $content = $arr[1];
     }
     $page->url = $this->siteUrl . $pageName;
@@ -100,23 +100,22 @@ class BlogManager {
       $post->url = $this->siteUrl . date('Y/m', $post->date).'/'.str_replace('.md','',$arr[1]);
 
       $postContent = file_get_contents($v);
-      $matches = array();
-      preg_match('/[\s\S]*[-]+:endmetadata:[-]+/', $postContent, $matches);
+      $metasAndContent = preg_split('/-{3,}/', $postContent, 2);
       # if we have metadata defined
-      if(count($matches)>0){
-        $toCache = $matches[0]."\n";
-        $metadata = preg_replace('/[-]+:endmetadata:[-]+/', "", $matches[0]);
-        $post->metas = json_decode($metadata);
-        if(isset($post->metas->title))
-          $post->title = $post->metas->title;
-        if(isset($post->metas->author)) {
-          if($this->authors->{$post->metas->author})
-            $post->metas->author = $this->authors->{$post->metas->author};
+      if(count($metasAndContent)==2){
+        $toCache = $metasAndContent[0]."\n";
+        $metadata = $metasAndContent[0];
+        $post->metas = Yaml::parse($metadata);
+        if(isset($post->metas['title']))
+          $post->title = $post->metas['title'];
+        if(isset($post->metas['author'])) {
+          if($this->authors[$post->metas['author']])
+            $post->metas['author'] = $this->authors[$post->metas['author']];
         }
-        $postContent = preg_replace('/[\s\S]*[-]+:endmetadata:[-]+/', "", $postContent);
+        $postContent = $metasAndContent[1];
         // Get the contents and convert it to HTML
         $content = $parsedown->text($postContent);
-      } else {
+    } else {
         // Get the contents and convert it to HTML
         $content = $parsedown->text($postContent);
         // Extract the title and body

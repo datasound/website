@@ -1,7 +1,5 @@
-{
-  "title": "This is a page"
-}
----:endmetadata:---
+title: This is a page
+------------
 An h1 header
 ============
 

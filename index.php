@@ -1,13 +1,15 @@
 <?php
 require_once 'vendor/autoload.php';
-use \KISSBlog\BlogManager;
+use KISSBlog\BlogManager;
+use KISSBlog\Utils;
 use Handlebars\Handlebars;
 use Handlebars\Loader\FilesystemLoader;
-use \Suin\RSSWriter\Feed;
-use \Suin\RSSWriter\Channel;
-use \Suin\RSSWriter\Item;
+use Suin\RSSWriter\Feed;
+use Suin\RSSWriter\Channel;
+use Suin\RSSWriter\Item;
+use Symfony\Component\Yaml\Yaml;
 
-putenv("env=development");
+# putenv("env=production");
 
 function error_handler($error) {
   header("Location: /i-am-so-sorry");
@@ -20,8 +22,13 @@ if(getenv("env")=="production") {
   error_reporting(~E_NOTICE);
 }
 
-# Getting configuration from config.json
-$config = json_decode(file_get_contents("config.json"))->{getenv("env")};
+try {
+  # Getting configuration from config.json
+  $config = Yaml::parse(file_get_contents((getenv("env") == 'production') ? 'production' : 'development'.".yaml"), true);
+} catch(\Exception $e) {
+  die($e->getMessage());
+  exit;
+}
 
 // needed when installed into subdirectory
 // check https://github.com/chriso/klein.php/wiki/Sub-Directory-Installation
@@ -32,13 +39,13 @@ if(ltrim($base, '/')){
 
 # Declaring the $app
 $app = new \Klein\Klein();
-date_default_timezone_set($config->blog->timezone);
-setlocale(LC_ALL, $config->blog->locale);
+date_default_timezone_set($config['timezone']);
+setlocale(LC_ALL, $config['locale']);
 
 #################################
 # START TEMPLATE INITIALIZATION #
 #################################
-$tplDir = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'public' . DIRECTORY_SEPARATOR . 'themes' . DIRECTORY_SEPARATOR . $config->blog->theme . DIRECTORY_SEPARATOR . "views";
+$tplDir = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'public' . DIRECTORY_SEPARATOR . 'themes' . DIRECTORY_SEPARATOR . $config['theme'] . DIRECTORY_SEPARATOR . "views";
 
 $handlebarsLoader = new FilesystemLoader($tplDir, [
     "extension" => "html"
@@ -117,7 +124,7 @@ $app->respond('GET', '/', function ($request, $response, $service) use ($app) {
   echo $app->template->render(
     'main',
     array(
-        'blog' => $app->config->blog,
+        'blog' => $app->config,
         'posts' => $posts,
         'page' => 1,
         'has_pagination' => $app->blog->has_pagination(1)
@@ -134,7 +141,7 @@ $app->respond('GET', '/page/[i:page]', function ($request, $response, $service) 
   echo $app->template->render(
     'main',
     array(
-        'blog' => $app->config->blog,
+        'blog' => $app->config,
         'posts' => $posts,
         'page' => $page,
         'has_pagination' => $app->blog->has_pagination($page)
@@ -150,7 +157,7 @@ $app->respond('GET', '/[:page]', function ($request, $response, $service) use ($
   echo $app->template->render(
     'page',
     array(
-        'blog' => $app->config->blog,
+        'blog' => $app->config,
         'page' => $page
     )
   );
@@ -165,7 +172,7 @@ $app->respond('GET', '/[:year]/[:month]/[:name]', function ($request, $response,
   echo $app->template->render(
     'post',
     array(
-        'blog' => $app->config->blog,
+        'blog' => $app->config,
         'title' => $post->title,
         'post' => $post
     )
@@ -180,9 +187,9 @@ $app->respond('GET', '/api/json', function ($request, $response, $service) use (
 // Show the RSS feed
 $app->respond('GET', '/feed/rss', function ($request, $response, $service) use ($app) {
   header('Content-Type: application/rss+xml');
-  $url = $app->config->blog->url;
-  $title = $app->config->blog->title;
-  $description = $app->config->blog->description;
+  $url = $app->config['url'];
+  $title = $app->config['title'];
+  $description = $app->config['description'];
   $feed = new Feed();
   $channel = new Channel();
   $channel
@@ -216,14 +223,14 @@ $app->onHttpError(function ($code, $router) use ($app) {
       echo $app->template->render(
         '404',
         array(
-            'blog' => $app->config->blog
+            'blog' => $app->config
         )
       );
     } elseif ($code >= 500 && $code <= 599) {
       echo $app->template->render(
         '500',
         array(
-            'blog' => $app->config->blog
+            'blog' => $app->config
         )
       );
     }
