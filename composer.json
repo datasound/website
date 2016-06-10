@@ -2,7 +2,7 @@
     "require": {
         "klein/klein": "2.1",
         "suin/php-rss-writer": ">=1.0",
-        "voodoophp/handlebars": "2.*",
+        "xamin/handlebars.php": "dev-master",
         "erusev/parsedown-extra": "dev-master",
         "symfony/yaml": "2.8.*@dev"
     },
