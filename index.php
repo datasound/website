@@ -65,6 +65,14 @@ $app->template->addHelper("striptags",
                         function($template, $context, $args, $source){
                             return strip_tags($context->get($args));
 });
+$app->template->addHelper("urlencode",
+                        function($template, $context, $args, $source){
+                            return urlencode($context->get($args));
+});
+$app->template->addHelper("urldecode",
+                        function($template, $context, $args, $source){
+                            return urldecode($context->get($args));
+});
 $app->template->addHelper("excerpt",
                         function($template, $context, $args, $source){
                           preg_match("/(.*?)\s+(.*?)\s+(?:(?:\"|\')(.*?)(?:\"|\'))/", trim($args), $m);
