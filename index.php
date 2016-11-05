@@ -32,10 +32,10 @@ try {
 
 // needed when installed into subdirectory
 // check https://github.com/chriso/klein.php/wiki/Sub-Directory-Installation
-$base  = dirname($_SERVER['PHP_SELF']);
-if(ltrim($base, '/')){
-    $_SERVER['REQUEST_URI'] = substr($_SERVER['REQUEST_URI'], strlen($base));
-}
+// $base  = dirname($_SERVER['PHP_SELF']);
+// if(ltrim($base, '/')){
+//    $_SERVER['REQUEST_URI'] = substr($_SERVER['REQUEST_URI'], strlen($base));
+// }
 
 # Declaring the $app
 $app = new \Klein\Klein();

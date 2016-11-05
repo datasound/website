@@ -1,23 +1,24 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "24a62409af78a79182c78b0ffcbb37f7",
+    "hash": "44fc38432c0ba6e185ba9264fef3f4ed",
+    "content-hash": "a15f7f62427dd65e201cb8fbc7c00057",
     "packages": [
         {
             "name": "erusev/parsedown",
-            "version": "1.5.2",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "468d1e3da8bde049debee7f484a4f9c4b26b41ba"
+                "reference": "3ebbd730b5c2cf5ce78bc1bf64071407fc6674b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/468d1e3da8bde049debee7f484a4f9c4b26b41ba",
-                "reference": "468d1e3da8bde049debee7f484a4f9c4b26b41ba",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/3ebbd730b5c2cf5ce78bc1bf64071407fc6674b7",
+                "reference": "3ebbd730b5c2cf5ce78bc1bf64071407fc6674b7",
                 "shasum": ""
             },
             "type": "library",
@@ -43,7 +44,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2015-03-18 18:44:57"
+            "time": "2015-10-04 16:44:32"
         },
         {
             "name": "erusev/parsedown-extra",
@@ -51,12 +52,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown-extra.git",
-                "reference": "5829ab17e68bd3f3c3da0633647b7874e5784385"
+                "reference": "0db5cce7354e4b76f155d092ab5eb3981c21258c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/5829ab17e68bd3f3c3da0633647b7874e5784385",
-                "reference": "5829ab17e68bd3f3c3da0633647b7874e5784385",
+                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/0db5cce7354e4b76f155d092ab5eb3981c21258c",
+                "reference": "0db5cce7354e4b76f155d092ab5eb3981c21258c",
                 "shasum": ""
             },
             "require": {
@@ -87,19 +88,19 @@
                 "parsedown",
                 "parser"
             ],
-            "time": "2015-03-18 20:18:52"
+            "time": "2015-11-01 10:19:22"
         },
         {
             "name": "klein/klein",
             "version": "v2.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/chriso/klein.php.git",
+                "url": "https://github.com/klein/klein.php.git",
                 "reference": "5dc073f05adb67ee09680545b4cc7b0590d2559e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chriso/klein.php/zipball/5dc073f05adb67ee09680545b4cc7b0590d2559e",
+                "url": "https://api.github.com/repos/klein/klein.php/zipball/5dc073f05adb67ee09680545b4cc7b0590d2559e",
                 "reference": "5dc073f05adb67ee09680545b4cc7b0590d2559e",
                 "shasum": ""
             },
@@ -147,25 +148,30 @@
         },
         {
             "name": "suin/php-rss-writer",
-            "version": "1.3",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/suin/php-rss-writer.git",
-                "reference": "82812ff988bb470f746d24e153cdc138e8838ff3"
+                "reference": "938b067ba0f3a4d494edbdb1241d054e7d15b633"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/suin/php-rss-writer/zipball/82812ff988bb470f746d24e153cdc138e8838ff3",
-                "reference": "82812ff988bb470f746d24e153cdc138e8838ff3",
+                "url": "https://api.github.com/repos/suin/php-rss-writer/zipball/938b067ba0f3a4d494edbdb1241d054e7d15b633",
+                "reference": "938b067ba0f3a4d494edbdb1241d054e7d15b633",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "eher/phpunit": ">=1.6",
+                "mockery/mockery": ">=0.7.2",
+                "suin/xoopsunit": ">=1.2"
             },
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Suin\\RSSWriter": "Source"
+                    "Suin\\RSSWriter": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -174,42 +180,37 @@
             ],
             "authors": [
                 {
-                    "name": "suin",
-                    "email": "suinyeze@gmail.com",
-                    "homepage": "https://www.facebook.com/suinyeze",
-                    "role": "Developer, Renaming Specialist"
+                    "name": "Hidehito Nozawa aka Suin",
+                    "email": "suinyeze@gmail.com"
                 }
             ],
-            "description": "Yet another simple RSS writer library for PHP 5.3 or later.",
+            "description": "Yet another simple RSS writer library for PHP 5.4 or later.",
             "homepage": "https://github.com/suin/php-rss-writer",
             "keywords": [
                 "feed",
                 "generator",
+                "php",
                 "rss",
                 "writer"
             ],
-            "time": "2014-03-12 06:05:28"
+            "time": "2016-07-21 14:05:32"
         },
         {
             "name": "symfony/yaml",
             "version": "2.8.x-dev",
-            "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Yaml.git",
-                "reference": "fdded56dde4ca9efce6322887bf5eaa7bb0aae3e"
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "58666e4ac3a2d378798f020308b35a75ffbeaafb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/fdded56dde4ca9efce6322887bf5eaa7bb0aae3e",
-                "reference": "fdded56dde4ca9efce6322887bf5eaa7bb0aae3e",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/58666e4ac3a2d378798f020308b35a75ffbeaafb",
+                "reference": "58666e4ac3a2d378798f020308b35a75ffbeaafb",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "~2.7|~3.0.0"
             },
             "type": "library",
             "extra": {
@@ -218,9 +219,12 @@
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\Yaml\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -228,34 +232,35 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Yaml Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-10 08:56:33"
+            "homepage": "https://symfony.com",
+            "time": "2016-11-03 07:52:58"
         },
         {
-            "name": "voodoophp/handlebars",
-            "version": "2.2.2",
+            "name": "xamin/handlebars.php",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mardix/Handlebars.git",
-                "reference": "cfd8efa3a02573e9cefc9adc05aa7df097a9691d"
+                "url": "https://github.com/XaminProject/handlebars.php.git",
+                "reference": "198faa48d620807541dacf84fe03a785692f1203"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mardix/Handlebars/zipball/cfd8efa3a02573e9cefc9adc05aa7df097a9691d",
-                "reference": "cfd8efa3a02573e9cefc9adc05aa7df097a9691d",
+                "url": "https://api.github.com/repos/XaminProject/handlebars.php/zipball/198faa48d620807541dacf84fe03a785692f1203",
+                "reference": "198faa48d620807541dacf84fe03a785692f1203",
                 "shasum": ""
             },
-            "require": {
-                "php": ">=5.4.0"
+            "require-dev": {
+                "phpunit/phpunit": "~4.4",
+                "squizlabs/php_codesniffer": "~1.5"
             },
             "type": "library",
             "autoload": {
@@ -275,26 +280,18 @@
                 {
                     "name": "Behrooz Shabani (everplays)",
                     "email": "everplays@gmail.com"
-                },
-                {
-                    "name": "Mardix",
-                    "homepage": "https://github.com/mardix"
                 }
             ],
             "description": "Handlebars processor for php",
-            "homepage": "http://voodoophp.org/docs/handlebars",
-            "keywords": [
-                "handlebars",
-                "mustache",
-                "templating"
-            ],
-            "time": "2014-02-21 04:28:49"
+            "homepage": "https://github.com/XaminProject/handlebars.php",
+            "time": "2016-07-31 10:31:23"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "xamin/handlebars.php": 20,
         "erusev/parsedown-extra": 20,
         "symfony/yaml": 20
     },

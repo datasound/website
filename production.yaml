@@ -1,18 +1,18 @@
-timezone: America/Los_Angeles
-locale: en_US.UTF-8
-url: http://kissblog.dev/
-title: Kiss Blog
-description: "Keep It Simple, Stupid..."
+timezone: Europe/Rome
+locale: it_IT.UTF-8
+url: http://datasound.dev/
+title: Datasound
+description: "When data play"
 logo: logo.png
 authors:
   admin:
-    name: Peter Griffin
-    bio: "Basically, I'm a fatass (that's what Stewie always says)"
-    instagram: peterpumpkineater69
-    facebook: addifyouuse
-    email: "petersmail@prvd.oln"
-    pic: peter.png
-  id-of-an-author: 
+    name: Matteo Merola
+    bio: "Just a regulard guy, but with superpowers..."
+    instagram: chiamamimatt
+    facebook: matteo.merola
+    email: "mattmezza@gmail.com"
+    pic: matt.jpeg
+  id-of-an-author:
     name: John Doe
     bio: Just a simple bio here...
     twitter: jhonny
