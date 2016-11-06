@@ -45,6 +45,7 @@ $app->blog = new BlogManager($config);
 # Register $config array into the $app
 $app->config = $config;
 
+include("./routes/home.php");
 include("./routes/blog.php");
 
 # Start the $app;

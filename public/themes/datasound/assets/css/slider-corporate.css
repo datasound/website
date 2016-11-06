@@ -1,0 +1,59 @@
+.tp-bgimg {
+    background-color: red !important;
+}
+.tp-caption.WebProduct-Title, .WebProduct-Title {
+    color: rgba(51, 51, 51, 1.00);
+    font-size: 90px;
+    line-height: 90px;
+    font-weight: 100;
+    font-style: normal;
+    font-family: Raleway;
+    padding: 0 0 0 0px;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0px;
+    border-radius: 0 0 0 0px
+}
+.tp-caption.WebProduct-SubTitle, .WebProduct-SubTitle {
+    color: rgba(153, 153, 153, 1.00);
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: Raleway;
+    padding: 0 0 0 0px;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0px;
+    border-radius: 0 0 0 0px
+}
+.tp-caption.Button-business-demo, .Button-business-demo {
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: Raleway;
+    padding: 13px 40px 13px 40px;
+    text-decoration: none;
+    text-align: left;
+    background-color: rgba(0, 186, 208, 1.00);
+    border-color: rgba(0, 0, 0, 1.00);
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 0px 0px 0px 0px
+}
+.tp-caption.Button-business-demo:hover, .Button-business-demo:hover {
+    color: rgba(0, 0, 0, 1.00);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 1.00);
+    border-color: rgba(0, 0, 0, 1.00);
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 0px 0px 0px 0px;
+    cursor: pointer
+}

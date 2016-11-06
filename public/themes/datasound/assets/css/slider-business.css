@@ -1,0 +1,90 @@
+.tp-caption.Business-tilte-1, .Business-tilte-1 {
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 800;
+    font-style: normal;
+    font-family: Raleway;
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+    text-align: left;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0px;
+    border-radius: 0px 0px 0px 0px
+}
+.tp-caption.Business-content-1, .Business-content-1 {
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-family: Raleway;
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+    text-align: left;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0px;
+    border-radius: 0px 0px 0px 0px;
+    text-align: left;
+    letter-spacing: 1px
+}
+.tp-caption.Business-button-1, .Business-button-1 {
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-family: Raleway;
+    padding: 15px 50px 15px 50px;
+    text-decoration: none;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(255, 255, 255, 1.00);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0px 0px 0px 0px;
+    text-align: left;
+    letter-spacing: 1px
+}
+.tp-caption.Business-button-1:hover, .Business-button-1:hover {
+    color: rgba(255, 255, 255, 1.00);
+    text-decoration: none;
+    background-color: rgba(0, 186, 208, 0);
+    border-color: rgba(0, 186, 208, 1.00);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0px 0px 0px 0px;
+    cursor: pointer
+}
+.tp-caption.Business-button-2, .Business-button-2 {
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-family: Raleway;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(255, 255, 255, 1.00);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0px 0px 0px 0px;
+    text-align: left;
+    letter-spacing: 1px
+}
+.tp-caption.Business-button-2:hover, .Business-button-2:hover {
+    color: rgba(0, 186, 208, 1.00);
+    text-decoration: none;
+    background-color: transparent;
+    border-color: rgba(0, 186, 208, 1.00);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0px 0px 0px 0px;
+    cursor: pointer
+}

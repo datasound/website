@@ -1,24 +1,50 @@
 timezone: Europe/Rome
 locale: it_IT.UTF-8
-url: http://datasound.dev/
+url: http://datasound.dev
 title: Datasound
 description: "Data start to play..."
 logo: logo.png
+email: info@datasound.dev
+address: C.da Fonte Lappone, 88888 Pesche (IS) Italy
+phone: +39 0876543212
+links:
+  facebook: matteo.merola
+  twitter: _mattmezza_
+  linkedin: matteomerola
 authors:
-  admin:
+  roliveto:
+    name: Rocco Oliveto
+    role: Chief Executive Officer
+    bio: Just a simple bio here...
+    twitter: roccooliveto
+    facebook: rocco.oliveto.1
+    email: "rocco@datasound.io"
+    pic: roccooliveto.png
+  rpareschi:
+    name: Remo Pareschi
+    role: Chief Business Officer
+    bio: Just a simple bio here...
+    twitter: rpareschi
+    facebook: remo.pareschi
+    email: "remo@datasound.io"
+    pic: remopareschi.png
+  mattmezza:
     name: Matteo Merola
+    role: Chief Technical Officer
     bio: "Just a regulard guy, but with superpowers..."
     instagram: chiamamimatt
     facebook: matteo.merola
-    email: "mattmezza@gmail.com"
+    email: "matteo@datasound.io"
     pic: matt.jpeg
-  id-of-an-author:
-    name: John Doe
+  sscalabrino:
+    name: Simone Scalabrino
+    role: Chief Scientific Officer
     bio: Just a simple bio here...
-    twitter: jhonny
-    facebook: john.doe
-    email: "john@doe.com"
-theme: default
+    twitter: sscalabrino
+    facebook: simone.scalabrino
+    email: "simone@datasound.io"
+    pic: simone.jpg
+theme: datasound
 posts:
   dir: posts
   perpage: 5
