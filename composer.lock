@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "44fc38432c0ba6e185ba9264fef3f4ed",
-    "content-hash": "a15f7f62427dd65e201cb8fbc7c00057",
+    "hash": "8fcb1eaaa5f30308871ce94293d10045",
+    "content-hash": "03c8c7c0cd1e848fa15700de41679dfd",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -92,24 +92,24 @@
         },
         {
             "name": "klein/klein",
-            "version": "v2.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/klein/klein.php.git",
-                "reference": "5dc073f05adb67ee09680545b4cc7b0590d2559e"
+                "reference": "94a057462f1f2de95450dc729c65b23b12c48557"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/klein/klein.php/zipball/5dc073f05adb67ee09680545b4cc7b0590d2559e",
-                "reference": "5dc073f05adb67ee09680545b4cc7b0590d2559e",
+                "url": "https://api.github.com/repos/klein/klein.php/zipball/94a057462f1f2de95450dc729c65b23b12c48557",
+                "reference": "94a057462f1f2de95450dc729c65b23b12c48557",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpunit/php-code-coverage": "1.2.x",
-                "phpunit/phpunit": "3.7.x",
+                "phpunit/php-code-coverage": "^2.2",
+                "phpunit/phpunit": "^4.8",
                 "squizlabs/php_codesniffer": "1.4.8"
             },
             "type": "library",
@@ -132,19 +132,19 @@
                 {
                     "name": "Trevor Suarez",
                     "email": "rican7@gmail.com",
-                    "homepage": "http://about.me/tnsuarez",
+                    "homepage": "https://trevorsuarez.com/",
                     "role": "Contributor/Developer"
                 }
             ],
             "description": "A lightning fast router for PHP",
-            "homepage": "https://github.com/chriso/klein.php",
+            "homepage": "https://github.com/klein/klein.php",
             "keywords": [
                 "boilerplate",
                 "router",
                 "routing",
                 "sinatra"
             ],
-            "time": "2014-11-07 07:35:23"
+            "time": "2016-11-01 06:01:39"
         },
         {
             "name": "suin/php-rss-writer",
@@ -291,6 +291,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "klein/klein": 20,
         "xamin/handlebars.php": 20,
         "erusev/parsedown-extra": 20,
         "symfony/yaml": 20

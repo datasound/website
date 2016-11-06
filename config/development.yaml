@@ -2,7 +2,7 @@ timezone: Europe/Rome
 locale: it_IT.UTF-8
 url: http://datasound.dev/
 title: Datasound
-description: "When data play"
+description: "Data start to play..."
 logo: logo.png
 authors:
   admin:
