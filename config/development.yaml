@@ -1,10 +1,10 @@
 timezone: Europe/Rome
 locale: it_IT.UTF-8
-url: http://datasound.dev
+url: http://localhost:8000
 title: Datasound
 description: "Data start to play..."
 logo: logo.png
-email: info@datasound.dev
+email: info@datasound.io
 address: C.da Fonte Lappone, 88888 Pesche (IS) Italy
 phone: +39 0876543212
 links:
