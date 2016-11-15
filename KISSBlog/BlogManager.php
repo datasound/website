@@ -17,7 +17,7 @@ class BlogManager {
   public function __construct($config) {
     $this->articleDir = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . $config['posts']['dir'] . DIRECTORY_SEPARATOR;
     $this->postPerPage = $config['posts']['perpage'];
-    $this->siteUrl = $config['url'];
+    $this->siteUrl = $config['url'] . "/";
     $this->pageDir = $config['pages']['dir'];
     $this->authors = $config['authors'];
   }

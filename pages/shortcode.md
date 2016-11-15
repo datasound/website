@@ -1,4 +1,5 @@
 title: This is a page
+cover: "/public/content/page-cover.jpg"
 ------------
 An h1 header
 ============

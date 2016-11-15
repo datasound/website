@@ -6,9 +6,9 @@ $app->respond('GET', '/blog', function ($request, $response, $service) use ($app
     $app->abort(404);
   }
   return $app->template->render(
-    'main',
+    'blog',
     array(
-        'blog' => $app->config,
+        'app' => $app->config,
         'posts' => $posts,
         'page' => 1,
         'has_pagination' => $app->blog->has_pagination(1)
@@ -23,9 +23,9 @@ $app->respond('GET', '/page/[i:page]', function ($request, $response, $service) 
     $app->abort(404);
   }
   return $app->template->render(
-    'main',
+    'blog',
     array(
-        'blog' => $app->config,
+        'app' => $app->config,
         'posts' => $posts,
         'page' => $page,
         'has_pagination' => $app->blog->has_pagination($page)
@@ -41,7 +41,7 @@ $app->respond('GET', '/[:page]', function ($request, $response, $service) use ($
   return $app->template->render(
     'page',
     array(
-        'blog' => $app->config,
+        'app' => $app->config,
         'page' => $page
     )
   );
@@ -56,7 +56,7 @@ $app->respond('GET', '/[:year]/[:month]/[:name]', function ($request, $response,
   return $app->template->render(
     'post',
     array(
-        'blog' => $app->config,
+        'app' => $app->config,
         'title' => $post->title,
         'post' => $post
     )
@@ -107,14 +107,14 @@ $app->onHttpError(function ($code, $router) use ($app) {
       return $app->template->render(
         '404',
         array(
-            'blog' => $app->config
+            'app' => $app->config
         )
       );
     } elseif ($code >= 500 && $code <= 599) {
       return $app->template->render(
         '500',
         array(
-            'blog' => $app->config
+            'app' => $app->config
         )
       );
     }
