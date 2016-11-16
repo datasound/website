@@ -47,6 +47,7 @@ $app->config = $config;
 
 include("./routes/home.php");
 include("./routes/blog.php");
+include("./routes/errors.php");
 
 # Start the $app;
 $app->dispatch();

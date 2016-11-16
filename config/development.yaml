@@ -52,5 +52,5 @@ pages:
   dir: pages
 navigation:
   - {url: "/", label: Home}
-  - {url: "/shortcode",label: Sample page}
   - {url: "/blog", label: Blog}
+  - {url: "/contatti", label: Contatti}

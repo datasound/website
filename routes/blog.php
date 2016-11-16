@@ -5,7 +5,7 @@ $app->respond('GET', '/blog', function ($request, $response, $service) use ($app
   if(empty($posts)){
     $app->abort(404);
   }
-  return $app->template->render(
+  $response->body($app->template->render(
     'blog',
     array(
         'app' => $app->config,
@@ -13,9 +13,11 @@ $app->respond('GET', '/blog', function ($request, $response, $service) use ($app
         'page' => 1,
         'has_pagination' => $app->blog->has_pagination(1)
     )
-  );
+  ));
+  return $response->send();
 });
-$app->respond('GET', '/page/[i:page]', function ($request, $response, $service) use ($app) {
+
+$app->respond('GET', '/blog/page/[i:page]', function ($request, $response, $service) use ($app) {
   $page = $request->page;
   $page = $page ? (int)$page : 1;
   $posts = $app->blog->get_posts($page);
@@ -32,11 +34,12 @@ $app->respond('GET', '/page/[i:page]', function ($request, $response, $service) 
     )
   );
 });
+
 $app->respond('GET', '/[:page]', function ($request, $response, $service) use ($app) {
   $pageName = $request->page;
   $page = $app->blog->get_page($pageName);
   if(!$page) {
-    $app->abort(404);
+    return $app->abort(404);
   }
   return $app->template->render(
     'page',
@@ -92,30 +95,4 @@ $app->respond('GET', '/feed/rss', function ($request, $response, $service) use (
       ->appendTo($channel);
   }
   return $feed;
-});
-
-
-// errors
-// Generic error
-$app->respond('GET', '/i-am-so-sorry', function ($request, $response, $service) use ($app) {
-  $app->abort(500);
-});
-
-// Using range behaviors via if/else
-$app->onHttpError(function ($code, $router) use ($app) {
-    if ($code >= 400 && $code < 500) {
-      return $app->template->render(
-        '404',
-        array(
-            'app' => $app->config
-        )
-      );
-    } elseif ($code >= 500 && $code <= 599) {
-      return $app->template->render(
-        '500',
-        array(
-            'app' => $app->config
-        )
-      );
-    }
 });
