@@ -1,7 +1,7 @@
-# Datasound
+# Datasounds
 
-When data play...
+[datasounds.io](datasounds.io) website
 
-- `git clone https://github.com/mattmezza/datasound.git`
+- `git clone https://github.com/thedatasounds/website.git`
 - `composer install`
 - `php -S localhost:8000`
