@@ -1,24 +1,100 @@
 timezone: Europe/Rome
 locale: it_IT.UTF-8
-url: http://datasound.dev/
-title: Datasound
-description: "When data play"
+url: http://datasounds.io
+title: Datasounds
+description: "Data start to play..."
 logo: logo.png
+email: hello@datasounds.io
+address: C.da Fonte Lappone, 86090 Pesche IS Italy
+phone: "+39 0874404159"
+links:
+  facebook: datasounds
+  twitter: thedatasounds
+  linkedin: datasounds
 authors:
-  admin:
-    name: Matteo Merola
-    bio: "Just a regulard guy, but with superpowers..."
-    instagram: chiamamimatt
-    facebook: matteo.merola
-    email: "mattmezza@gmail.com"
-    pic: matt.jpeg
-  id-of-an-author:
-    name: John Doe
-    bio: Just a simple bio here...
-    twitter: jhonny
-    facebook: john.doe
-    email: "john@doe.com"
-theme: default
+  lead:
+    rocoli:
+      name: Rocco Oliveto
+      role: Chief Executive Officer
+      bio: Just a simple bio here...
+      twitter: roccooliveto
+      facebook: rocco.oliveto.1
+      email: "rocco@datasounds.io"
+      pic: roccooliveto.png
+    rpareschi:
+      name: Remo Pareschi
+      role: Chief Business Officer
+      bio: Just a simple bio here...
+      twitter: rpareschi
+      facebook: remo.pareschi
+      email: "remo@datasounds.io"
+      pic: remopareschi.png
+    mattmezza:
+      name: Matteo Merola
+      role: Chief Technical Officer
+      bio: "Just a regulard guy, but with superpowers..."
+      instagram: chiamamimatt
+      facebook: matteo.merola
+      email: "matteo@datasounds.io"
+      pic: matt.jpeg
+    s.scalabrino:
+      name: Simone Scalabrino
+      role: Chief Scientific Officer
+      bio: Just a simple bio here...
+      twitter: sscalabrino
+      facebook: simone.scalabrino
+      email: "simone@datasounds.io"
+      pic: simone.jpg
+  board:
+    angeloparziale:
+      name: Angelo Parziale
+      role: Software Developer
+      bio: Just a simple bio here...
+      twitter: sscalabrino
+      facebook: simone.scalabrino
+      email: "angelo.parziale@datasounds.io"
+      pic: angelo.jpg
+    cicciog:
+      name: Francesco Gualtieri
+      role: Software Developer
+      bio: Just a simple bio here...
+      twitter: sscalabrino
+      facebook: simone.scalabrino
+      email: "francesco.gualtieri@datasounds.io"
+      pic: francesco.jpg
+    drusso:
+      name: Davide Russo
+      role: Software Developer
+      bio: Just a simple bio here...
+      twitter: sscalabrino
+      facebook: simone.scalabrino
+      email: "davide.russo@datasounds.io"
+      pic: placeholder.png
+    oraz94:
+      name: Orazio Maitino
+      role: Software Developer
+      bio: Just a simple bio here...
+      twitter: sscalabrino
+      facebook: simone.scalabrino
+      email: "orazio.maitino@datasounds.io"
+      pic: placeholder.png
+    stefano.dallapalma:
+      name: Stefano Dalla Palma
+      role: Software Developer
+      bio: Just a simple bio here...
+      twitter: sscalabrino
+      facebook: simone.scalabrino
+      email: "stefano.dallapalma@datasounds.io"
+      pic: stefano.jpg
+    vittorio:
+      name: Vittorio Polverino
+      role: Software Developer
+      bio: Just a simple bio here...
+      twitter: sscalabrino
+      facebook: simone.scalabrino
+      email: "vittorio.polverino@datasounds.io"
+      pic: vittorio.jpg
+theme: datasounds
 posts:
   dir: posts
   perpage: 5
@@ -26,4 +102,5 @@ pages:
   dir: pages
 navigation:
   - {url: "/", label: Home}
-  - {url: "/shortcode",label: Sample page}
+  - {url: "/contacts", label: Contacts}
+  - {url: "/blog", label: Blog}

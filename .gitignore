@@ -32,3 +32,5 @@ Temporary Items
 
 #bower
 public/themes/datasound/bower_components/
+
+env.php

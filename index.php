@@ -4,10 +4,10 @@ require_once 'vendor/autoload.php';
 use KISSBlog\BlogManager;
 use Symfony\Component\Yaml\Yaml;
 
-# putenv("env=production");
+include "env.php";
 
 function error_handler($error) {
-  header("Location: /i-am-so-sorry");
+  header("Location: /error/i-am-so-sorry");
 }
 
 if(getenv("env")=="production") {

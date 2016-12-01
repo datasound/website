@@ -2,7 +2,7 @@
 
 // errors
 // Generic error
-$app->respond('GET', '/i-am-so-sorry', function ($request, $response, $service) use ($app) {
+$app->respond('GET', '/error/i-am-so-sorry', function ($request, $response, $service) use ($app) {
   $app->abort(500);
 });
 

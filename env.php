@@ -1,0 +1,5 @@
+<?php
+
+# putenv("env=production");
+
+ ?>
