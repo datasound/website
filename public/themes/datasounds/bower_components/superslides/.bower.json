@@ -1,0 +1,15 @@
+{
+  "name": "superslides",
+  "homepage": "https://github.com/nicinabox/superslides",
+  "version": "0.6.2",
+  "_release": "0.6.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.6.2",
+    "commit": "aa49d64e980b28806c0698d44a8b523b0a8e7344"
+  },
+  "_source": "https://github.com/nicinabox/superslides.git",
+  "_target": "^0.6.2",
+  "_originalSource": "superslides",
+  "_direct": true
+}

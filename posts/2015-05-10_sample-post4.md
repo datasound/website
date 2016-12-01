@@ -1,6 +1,5 @@
 title: Sample Post
 author: mattmezza
-image: /public/themes/datasound/assets/images/layout/blog/blog-sidebar/01.jpg
 tags:
   - Hello World
 ----------

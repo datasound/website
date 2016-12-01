@@ -1,0 +1,62 @@
+<header class="header">
+    <!-- Top Header -->
+    <div class="top-header hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-9">
+                    <ul class="site-info clearfix">
+                        <li><span class="dslc-icon dslc-icon-as-paperplane"></span><span>{{app.email}}</span></li>
+                        <li><span class="dslc-icon dslc-icon-as-location"></span><span>{{app.address}}</span></li>
+                        <li><span class="dslc-icon dslc-icon-as-phone"></span><span>{{app.phone}}</span></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <ul class="list-social clearfix">
+                        <li><a href="https://twitter.com/{{app.links.twitter}}" class="twitter" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+                        <li><a href="https://facebook.com/{{app.links.facebook}}" class="facebook" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+                        <li><a href="https://linkedin.com/company/{{app.links.linkedin}}" class="linkedin" title="Linkedin"><span class="fa fa-linkedin"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="search-box">
+        <div class="search-box-close"></div>
+        <div class="container">
+            <form action="{{app.url}}/search" method="get" accept-charset="utf-8">
+                <label for="input_search">Enter your key word: </label>
+                <div class="input-wrap">
+                    <input type="text" name="input_search" id="input_search" value="Type your word...">
+                </div>
+            </form>
+        </div>
+    </div> -->
+    <nav class="navigation" data-responsive="1000">
+        <div class="container">
+            <div class="row">
+                <!-- menu -->
+                <div class="col-xs-5 col-sm-4 col-md-3">
+                    <!-- Logo -->
+                    <a href="/" class="logo">
+                        <img src="{{app.url}}/public/content/logo-wide-white-small.png" alt="Datasound logo"/>
+                    </a>
+                </div>
+                <div class="col-xs-7 col-sm-8 col-md-9">
+                    <div class="menu-toggle">
+                        <span></span>
+                    </div>
+                    <!-- Shop & Search -->
+                    <!-- <ul class="search-and-shop">
+                        <li class="search">
+                            <a href="home-landing.html#" class="trigger-search" data-id="search_dialog">
+                                <span class="fa fa-search"></span>
+                            </a>
+                        </li>
+                    </ul> -->
+                    {{>navigation}}
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

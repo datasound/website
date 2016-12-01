@@ -17,7 +17,7 @@ $app->respond('GET', '/blog', function ($request, $response, $service) use ($app
   return $response->send();
 });
 
-$app->respond('GET', '/blog/page/[i:page]', function ($request, $response, $service) use ($app) {
+$app->respond('GET', '/blog/[i:page]', function ($request, $response, $service) use ($app) {
   $page = $request->page;
   $page = $page ? (int)$page : 1;
   $posts = $app->blog->get_posts($page);
@@ -38,7 +38,7 @@ $app->respond('GET', '/blog/page/[i:page]', function ($request, $response, $serv
 $app->respond('GET', '/[:page]', function ($request, $response, $service) use ($app) {
   $pageName = $request->page;
   $page = $app->blog->get_page($pageName);
-  if(!$page) {
+  if(!$page && $pageName != "blog") {
     return $app->abort(404);
   }
   return $app->template->render(

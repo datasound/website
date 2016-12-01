@@ -1,50 +1,100 @@
 timezone: Europe/Rome
 locale: it_IT.UTF-8
 url: http://localhost:8000
-title: Datasound
+title: Datasounds
 description: "Data start to play..."
 logo: logo.png
-email: info@datasound.io
-address: C.da Fonte Lappone, 88888 Pesche (IS) Italy
-phone: +39 0876543212
+email: hello@datasounds.io
+address: C.da Fonte Lappone, 86090 Pesche IS Italy
+phone: "+39 0874404159"
 links:
-  facebook: matteo.merola
-  twitter: _mattmezza_
-  linkedin: matteomerola
+  facebook: datasounds
+  twitter: thedatasounds
+  linkedin: datasounds
 authors:
-  roliveto:
-    name: Rocco Oliveto
-    role: Chief Executive Officer
-    bio: Just a simple bio here...
-    twitter: roccooliveto
-    facebook: rocco.oliveto.1
-    email: "rocco@datasound.io"
-    pic: roccooliveto.png
-  rpareschi:
-    name: Remo Pareschi
-    role: Chief Business Officer
-    bio: Just a simple bio here...
-    twitter: rpareschi
-    facebook: remo.pareschi
-    email: "remo@datasound.io"
-    pic: remopareschi.png
-  mattmezza:
-    name: Matteo Merola
-    role: Chief Technical Officer
-    bio: "Just a regulard guy, but with superpowers..."
-    instagram: chiamamimatt
-    facebook: matteo.merola
-    email: "matteo@datasound.io"
-    pic: matt.jpeg
-  sscalabrino:
-    name: Simone Scalabrino
-    role: Chief Scientific Officer
-    bio: Just a simple bio here...
-    twitter: sscalabrino
-    facebook: simone.scalabrino
-    email: "simone@datasound.io"
-    pic: simone.jpg
-theme: datasound
+  lead:
+    rocoli:
+      name: Rocco Oliveto
+      role: Chief Executive Officer
+      bio: Just a simple bio here...
+      twitter: roccooliveto
+      facebook: rocco.oliveto.1
+      email: "rocco@datasounds.io"
+      pic: roccooliveto.png
+    rpareschi:
+      name: Remo Pareschi
+      role: Chief Business Officer
+      bio: Just a simple bio here...
+      twitter: rpareschi
+      facebook: remo.pareschi
+      email: "remo@datasounds.io"
+      pic: remopareschi.png
+    mattmezza:
+      name: Matteo Merola
+      role: Chief Technical Officer
+      bio: "Just a regulard guy, but with superpowers..."
+      instagram: chiamamimatt
+      facebook: matteo.merola
+      email: "matteo@datasounds.io"
+      pic: matt.jpeg
+    s.scalabrino:
+      name: Simone Scalabrino
+      role: Chief Scientific Officer
+      bio: Just a simple bio here...
+      twitter: sscalabrino
+      facebook: simone.scalabrino
+      email: "simone@datasounds.io"
+      pic: simone.jpg
+  board:
+    angeloparziale:
+      name: Angelo Parziale
+      role: Software Developer
+      bio: Just a simple bio here...
+      twitter: sscalabrino
+      facebook: simone.scalabrino
+      email: "angelo.parziale@datasounds.io"
+      pic: angelo.jpg
+    cicciog:
+      name: Francesco Gualtieri
+      role: Software Developer
+      bio: Just a simple bio here...
+      twitter: sscalabrino
+      facebook: simone.scalabrino
+      email: "francesco.gualtieri@datasounds.io"
+      pic: francesco.jpg
+    drusso:
+      name: Davide Russo
+      role: Software Developer
+      bio: Just a simple bio here...
+      twitter: sscalabrino
+      facebook: simone.scalabrino
+      email: "davide.russo@datasounds.io"
+      pic: placeholder.png
+    oraz94:
+      name: Orazio Maitino
+      role: Software Developer
+      bio: Just a simple bio here...
+      twitter: sscalabrino
+      facebook: simone.scalabrino
+      email: "orazio.maitino@datasounds.io"
+      pic: placeholder.png
+    stefano.dallapalma:
+      name: Stefano Dalla Palma
+      role: Software Developer
+      bio: Just a simple bio here...
+      twitter: sscalabrino
+      facebook: simone.scalabrino
+      email: "stefano.dallapalma@datasounds.io"
+      pic: stefano.jpg
+    vittorio:
+      name: Vittorio Polverino
+      role: Software Developer
+      bio: Just a simple bio here...
+      twitter: sscalabrino
+      facebook: simone.scalabrino
+      email: "vittorio.polverino@datasounds.io"
+      pic: vittorio.jpg
+theme: datasounds
 posts:
   dir: posts
   perpage: 5
@@ -52,5 +102,5 @@ pages:
   dir: pages
 navigation:
   - {url: "/", label: Home}
+  - {url: "/contacts", label: Contacts}
   - {url: "/blog", label: Blog}
-  - {url: "/contatti", label: Contatti}
