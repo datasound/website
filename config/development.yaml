@@ -102,6 +102,4 @@ posts:
 pages:
   dir: pages
 navigation:
-  - {url: "/", label: Home}
-  - {url: "/contacts", label: Contacts}
   - {url: "/blog", label: Blog}
