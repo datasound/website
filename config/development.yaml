@@ -64,13 +64,13 @@ authors:
       email: "francesco.gualtieri@datasounds.io"
       pic: francesco.jpg
     drusso:
-      name: Davide Russo
+      name: Davide<br />Russo
       role: Software Developer
       bio: Just a simple bio here...
       twitter: sscalabrino
       facebook: simone.scalabrino
       email: "davide.russo@datasounds.io"
-      pic: placeholder.png
+      pic: davide.jpg
     oraz94:
       name: Orazio Maitino
       role: Software Developer
