@@ -5,10 +5,11 @@
                 <i class="dslc-icon dslc-icon-as-profile-male"></i>
             </div>
             <h3 class="user-section-title">
-                    Team
+                    The datasounds Team
                 </h3>
+            <p><em>"Many ideas grow better when transplanted into another mind than in the one where they sprang up."</em> (Oliver Wendell Holmes, Sr.)</p>
             <p>
-              We are a great group that complete each other trying to solve big problems with easy and reliable solutions.
+              We are a great group of people that complement each other trying to solve big problems with easy and reliable solutions.
             </p>
             <div class="divider divider-line-heading divider-fullwidth">
                 <div class="line-middle"></div>
@@ -44,7 +45,33 @@
               {{/each}}
             </div>
             <div class="row">
-              {{#each app.authors.board}}
+              {{#each app.authors.scientists}}
+              <div class="col-xs-6 col-sm-3 col-md-2">
+                  <div class="user-type-1">
+                      <div class="user-thumbnail">
+                          <img src="{{app.url}}/public/content/{{pic}}" alt="{{name}}'s picture'">
+                      </div>
+                      <div class="user-content">
+                          <h4 class="user-name">{{{name}}}</h4>
+                          <div class="user-position">{{role}}</div>
+                          <ul class="social social-circle">
+                              <!-- <li>
+                                  <a href="https://twitter.com/{{twitter}}"><i class="fa fa-twitter"></i></a>
+                              </li> -->
+                              <!-- <li>
+                                  <a href="https://facebook.com/{{facebook}}"><i class="fa fa-facebook"></i></a>
+                              </li>
+                              <li>
+                                  <a href="https://linkedin.com/pub/{{linkedin}}"><i class="fa fa-linkedin"></i></a>
+                              </li> -->
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              {{/each}}
+            </div>
+            <div class="row">
+              {{#each app.authors.developers}}
               <div class="col-xs-6 col-sm-3 col-md-2">
                   <div class="user-type-1">
                       <div class="user-thumbnail">
