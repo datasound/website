@@ -103,7 +103,15 @@ authors:
       twitter:
       facebook: orazio.maitino
       email: "orazio.maitino@datasounds.io"
-      pic: placeholder.png
+      pic: orazio.png
+    stefano.dallapalma:
+      name: Stefano Dalla Palma
+      role: Software Developer
+      bio: Just a simple bio here...
+      twitter: sscalabrino
+      facebook: simone.scalabrino
+      email: "stefano.dallapalma@datasounds.io"
+      pic: stefano.jpg
     vittorio:
       name: Vittorio Polverino
       role: Front-end Developer
