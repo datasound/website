@@ -48,10 +48,10 @@ authors:
       pic: simone.jpg
   scientists:
     drusso:
-      name: Davide Russo
+      name: Davide<br />Russo
       role: Research Assistant
       bio: Just a simple bio here...
-      twitter: 
+      twitter:
       facebook: davide.russo.7927
       email: "davide.russo@datasounds.io"
       pic: davide.jpg
@@ -59,7 +59,7 @@ authors:
       name: Fiammetta Marulli
       role: Research Assistant
       bio: Just a simple bio here...
-      twitter: 
+      twitter:
       facebook: fiammetta.marulli
       email: "fiammetta.marulli@datasounds.io"
       pic: fiammetta.png
@@ -67,7 +67,7 @@ authors:
       name: Stefano Dalla Palma
       role: Research Assistant
       bio: Just a simple bio here...
-      twitter: 
+      twitter:
       facebook: stefano.d.palma
       email: "stefano.dallapalma@datasounds.io"
       pic: stefano.jpg
@@ -84,7 +84,7 @@ authors:
       name: Francesco Gualtieri
       role: Back-end Developer
       bio: Just a simple bio here...
-      twitter: 
+      twitter:
       facebook: francesco.gualtieri.12
       email: "francesco.gualtieri@datasounds.io"
       pic: francesco.jpg
@@ -116,7 +116,7 @@ authors:
       name: Vittorio Polverino
       role: Front-end Developer
       bio: Just a simple bio here...
-      twitter: 
+      twitter:
       facebook: vitpolverino
       email: "vittorio.polverino@datasounds.io"
       pic: vittorio.jpg
