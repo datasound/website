@@ -1,5 +1,5 @@
 <?php
 
-putenv("env=production");
+putenv("env=development");
 
  ?>

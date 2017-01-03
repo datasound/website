@@ -46,37 +46,62 @@ authors:
       facebook: simone.scalabrino
       email: "simone@datasounds.io"
       pic: simone.jpg
-  board:
+  scientists:
+    drusso:
+      name: Davide<br />Russo
+      role: Research Assistant
+      bio: Just a simple bio here...
+      twitter:
+      facebook: davide.russo.7927
+      email: "davide.russo@datasounds.io"
+      pic: davide.jpg
+    fiammetta:
+      name: Fiammetta Marulli
+      role: Research Assistant
+      bio: Just a simple bio here...
+      twitter:
+      facebook: fiammetta.marulli
+      email: "fiammetta.marulli@datasounds.io"
+      pic: fiammetta.png
+    stefano.dallapalma:
+      name: Stefano Dalla Palma
+      role: Research Assistant
+      bio: Just a simple bio here...
+      twitter:
+      facebook: stefano.d.palma
+      email: "stefano.dallapalma@datasounds.io"
+      pic: stefano.jpg
+  developers:
     angeloparziale:
       name: Angelo Parziale
-      role: Software Developer
+      role: Front-end Developer
       bio: Just a simple bio here...
-      twitter: sscalabrino
-      facebook: simone.scalabrino
+      twitter:
+      facebook: angelo.m.parziale
       email: "angelo.parziale@datasounds.io"
       pic: angelo.jpg
     cicciog:
       name: Francesco Gualtieri
-      role: Software Developer
+      role: Back-end Developer
       bio: Just a simple bio here...
-      twitter: sscalabrino
-      facebook: simone.scalabrino
+      twitter:
+      facebook: francesco.gualtieri.12
       email: "francesco.gualtieri@datasounds.io"
       pic: francesco.jpg
-    drusso:
-      name: Davide<br />Russo
-      role: Software Developer
+    lorenzo:
+      name: Lorenzo Verde
+      role: Back-end Developer
       bio: Just a simple bio here...
-      twitter: sscalabrino
-      facebook: simone.scalabrino
-      email: "davide.russo@datasounds.io"
-      pic: davide.jpg
+      twitter:
+      facebook: lorenzo.verde.315
+      email: "lorenzo.verde@datasounds.io"
+      pic: placeholder.png
     oraz94:
       name: Orazio Maitino
-      role: Software Developer
+      role: Back-end Developer
       bio: Just a simple bio here...
-      twitter: sscalabrino
-      facebook: simone.scalabrino
+      twitter:
+      facebook: orazio.maitino
       email: "orazio.maitino@datasounds.io"
       pic: orazio.png
     stefano.dallapalma:
@@ -89,10 +114,10 @@ authors:
       pic: stefano.jpg
     vittorio:
       name: Vittorio Polverino
-      role: Software Developer
+      role: Front-end Developer
       bio: Just a simple bio here...
-      twitter: sscalabrino
-      facebook: simone.scalabrino
+      twitter:
+      facebook: vitpolverino
       email: "vittorio.polverino@datasounds.io"
       pic: vittorio.jpg
 theme: datasounds
