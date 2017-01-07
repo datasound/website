@@ -4,22 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8fcb1eaaa5f30308871ce94293d10045",
-    "content-hash": "03c8c7c0cd1e848fa15700de41679dfd",
+    "content-hash": "37638b5db55ca05ef8704dd625398cb0",
     "packages": [
         {
             "name": "erusev/parsedown",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "3ebbd730b5c2cf5ce78bc1bf64071407fc6674b7"
+                "reference": "20ff8bbb57205368b4b42d094642a3e52dac85fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/3ebbd730b5c2cf5ce78bc1bf64071407fc6674b7",
-                "reference": "3ebbd730b5c2cf5ce78bc1bf64071407fc6674b7",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/20ff8bbb57205368b4b42d094642a3e52dac85fb",
+                "reference": "20ff8bbb57205368b4b42d094642a3e52dac85fb",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
             },
             "type": "library",
             "autoload": {
@@ -44,7 +46,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2015-10-04 16:44:32"
+            "time": "2016-11-02T15:56:58+00:00"
         },
         {
             "name": "erusev/parsedown-extra",
@@ -92,7 +94,7 @@
         },
         {
             "name": "klein/klein",
-            "version": "dev-master",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/klein/klein.php.git",
@@ -144,7 +146,7 @@
                 "routing",
                 "sinatra"
             ],
-            "time": "2016-11-01 06:01:39"
+            "time": "2016-11-01T06:01:39+00:00"
         },
         {
             "name": "suin/php-rss-writer",
@@ -193,29 +195,35 @@
                 "rss",
                 "writer"
             ],
-            "time": "2016-07-21 14:05:32"
+            "time": "2016-07-21T14:05:32+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "2.8.x-dev",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "58666e4ac3a2d378798f020308b35a75ffbeaafb"
+                "reference": "a7095af4b97a0955f85c8989106c249fa649011f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/58666e4ac3a2d378798f020308b35a75ffbeaafb",
-                "reference": "58666e4ac3a2d378798f020308b35a75ffbeaafb",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/a7095af4b97a0955f85c8989106c249fa649011f",
+                "reference": "a7095af4b97a0955f85c8989106c249fa649011f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "symfony/console": "~2.8|~3.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -242,7 +250,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-11-03 07:52:58"
+            "time": "2016-12-10T10:07:06+00:00"
         },
         {
             "name": "xamin/handlebars.php",
@@ -250,12 +258,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/XaminProject/handlebars.php.git",
-                "reference": "198faa48d620807541dacf84fe03a785692f1203"
+                "reference": "38c743f79b8a2b501d9be97a413a56e5c2ed3e0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/XaminProject/handlebars.php/zipball/198faa48d620807541dacf84fe03a785692f1203",
-                "reference": "198faa48d620807541dacf84fe03a785692f1203",
+                "url": "https://api.github.com/repos/XaminProject/handlebars.php/zipball/38c743f79b8a2b501d9be97a413a56e5c2ed3e0f",
+                "reference": "38c743f79b8a2b501d9be97a413a56e5c2ed3e0f",
                 "shasum": ""
             },
             "require-dev": {
@@ -284,17 +292,15 @@
             ],
             "description": "Handlebars processor for php",
             "homepage": "https://github.com/XaminProject/handlebars.php",
-            "time": "2016-07-31 10:31:23"
+            "time": "2016-12-27 09:15:36"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "klein/klein": 20,
         "xamin/handlebars.php": 20,
-        "erusev/parsedown-extra": 20,
-        "symfony/yaml": 20
+        "erusev/parsedown-extra": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

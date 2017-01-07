@@ -1,10 +1,10 @@
 {
     "require": {
-        "klein/klein": "dev-master",
-        "suin/php-rss-writer": ">=1.0",
+        "klein/klein": ">=2.1.1",
+        "suin/php-rss-writer": ">=1.5",
         "xamin/handlebars.php": "dev-master",
         "erusev/parsedown-extra": "dev-master",
-        "symfony/yaml": "2.8.*@dev"
+        "symfony/yaml": ">=3.2.1"
     },
     "autoload": {
     	"psr-4": {
