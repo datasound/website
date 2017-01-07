@@ -17,7 +17,7 @@ authors:
       name: Rocco Oliveto
       role: Chief Executive Officer
       bio: Just a simple bio here...
-      twitter: roccooliveto
+      twitter: RoccoOliveto
       facebook: rocco.oliveto.1
       email: "rocco@datasounds.io"
       pic: roccooliveto.png
@@ -25,7 +25,7 @@ authors:
       name: Remo Pareschi
       role: Chief Business Officer
       bio: Just a simple bio here...
-      twitter: rpareschi
+      twitter: remo_pareschi
       facebook: remo.pareschi
       email: "remo@datasounds.io"
       pic: remopareschi.png
@@ -42,7 +42,7 @@ authors:
       name: Simone Scalabrino
       role: Chief Scientific Officer
       bio: Just a simple bio here...
-      twitter: sscalabrino
+      twitter: SimonScalabrino
       facebook: simone.scalabrino
       email: "simone@datasounds.io"
       pic: simone.jpg
@@ -95,7 +95,7 @@ authors:
       twitter:
       facebook: lorenzo.verde.315
       email: "lorenzo.verde@datasounds.io"
-      pic: placeholder.png
+      pic: lorenzo.jpg
     oraz94:
       name: Orazio Maitino
       role: Back-end Developer
