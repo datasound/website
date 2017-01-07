@@ -3,8 +3,8 @@
         "klein/klein": ">=2.1.1",
         "suin/php-rss-writer": ">=1.5",
         "xamin/handlebars.php": "dev-master",
-        "erusev/parsedown-extra": "dev-master",
-        "symfony/yaml": ">=3.2.1"
+        "symfony/yaml": ">=3.2.1",
+        "mattmezza/blog-manager": "^1.0"
     },
     "autoload": {
     	"psr-4": {

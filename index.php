@@ -1,7 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
 
-use KISSBlog\BlogManager;
+use Blog\Manager;
 use Symfony\Component\Yaml\Yaml;
 
 include "env.php";
@@ -40,7 +40,7 @@ setlocale(LC_ALL, $config['locale']);
 include("./config/template.php");
 
 # Init the blog engine
-$app->blog = new BlogManager($config);
+$app->blog = new Manager($config);
 
 # Register $config array into the $app
 $app->config = $config;

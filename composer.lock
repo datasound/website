@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "37638b5db55ca05ef8704dd625398cb0",
+    "content-hash": "85b7d4f8ea7bc4e5d630bb46c52b77db",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -50,7 +50,7 @@
         },
         {
             "name": "erusev/parsedown-extra",
-            "version": "dev-master",
+            "version": "0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown-extra.git",
@@ -90,7 +90,7 @@
                 "parsedown",
                 "parser"
             ],
-            "time": "2015-11-01 10:19:22"
+            "time": "2015-11-01T10:19:22+00:00"
         },
         {
             "name": "klein/klein",
@@ -147,6 +147,46 @@
                 "sinatra"
             ],
             "time": "2016-11-01T06:01:39+00:00"
+        },
+        {
+            "name": "mattmezza/blog-manager",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mattmezza/blog-manager.git",
+                "reference": "36973efb47d1b5797ebe69c5edd3d35a86a8988d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mattmezza/blog-manager/zipball/36973efb47d1b5797ebe69c5edd3d35a86a8988d",
+                "reference": "36973efb47d1b5797ebe69c5edd3d35a86a8988d",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown-extra": "^0.7.1",
+                "symfony/yaml": "^3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Blog\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matteo Merola",
+                    "email": "mattmezza@gmail.com"
+                }
+            ],
+            "description": "An utility to manage a small blog with files and markdown syntax",
+            "time": "2017-01-07T20:36:34+00:00"
         },
         {
             "name": "suin/php-rss-writer",
@@ -299,8 +339,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "xamin/handlebars.php": 20,
-        "erusev/parsedown-extra": 20
+        "xamin/handlebars.php": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
