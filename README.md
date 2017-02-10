@@ -4,4 +4,4 @@
 
 - `git clone https://github.com/thedatasounds/website.git`
 - `composer install`
-- `php -S localhost:8000`
+- `php -S localhost:8888`
