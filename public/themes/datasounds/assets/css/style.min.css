@@ -8851,3 +8851,14 @@ html .bg-parallax {
 
 .pl-100 {
   padding-left: 100px; }
+
+  div#carousel-home.carousel.slide > div.carousel-inner > div.item > img {
+    width: 100%;
+    height: 100vh;
+  }
+
+@media screen and (max-width: 990px) {
+  div#carousel-home.carousel.slide > div.carousel-inner > div.item > img {
+    height: 50vh;
+  }
+}
