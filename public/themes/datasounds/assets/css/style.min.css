@@ -8857,7 +8857,7 @@ html .bg-parallax {
     height: 100vh;
   }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 480px) {
   div#carousel-home.carousel.slide > div.carousel-inner > div.item > img {
     height: 50vh;
   }
