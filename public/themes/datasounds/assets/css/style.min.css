@@ -8852,6 +8852,26 @@ html .bg-parallax {
 .pl-100 {
   padding-left: 100px; }
 
-  div#carousel-home.carousel.slide > div.carousel-inner > div.item > img {
-    width: 100%;
+div#carousel-home.carousel.slide > div.carousel-inner > div.item > img {
+  width: 100%;
+}
+
+div#carousel-home > div.carousel-inner > div.item > div.carousel-caption > p {
+    font-size: 20px;
+}
+div#carousel-home > div.carousel-inner > div.item > div.carousel-caption {
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+@media screen and (max-width: 700px) {
+
+  div#carousel-home > div.carousel-inner > div.item > div.carousel-caption > h1  {
+      display: none;
   }
+
+  div#carousel-home > div.carousel-inner > div.item > div.carousel-caption > p {
+      font-size: 13px;
+      margin: 2em;
+  }
+}
