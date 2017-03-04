@@ -8854,17 +8854,21 @@ html .bg-parallax {
 
 div#carousel-home.carousel.slide > div.carousel-inner > div.item > img {
   width: 100%;
+  height: 100vh;
 }
 
 div#carousel-home > div.carousel-inner > div.item > div.carousel-caption > p {
-    font-size: 20px;
+    font-size: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 div#carousel-home > div.carousel-inner > div.item > div.carousel-caption {
     bottom: 0;
     right: 0;
     left: 0;
 }
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 500px) {
 
   div#carousel-home > div.carousel-inner > div.item > div.carousel-caption > h1  {
       display: none;
@@ -8872,6 +8876,13 @@ div#carousel-home > div.carousel-inner > div.item > div.carousel-caption {
 
   div#carousel-home > div.carousel-inner > div.item > div.carousel-caption > p {
       font-size: 13px;
-      margin: 2em;
+      margin: 0;
+      margin-left: 2%;
+      margin-right: 2%;
   }
+
+  div#carousel-home.carousel.slide > div.carousel-inner > div.item > img {
+    height: 50vh;
+  }
+
 }
