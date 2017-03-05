@@ -8858,49 +8858,70 @@ html .bg-parallax {
  -------------------
 */
 
-div#carousel-home.carousel.slide > div.carousel-inner > div.item > img {
+#carousel-home.carousel.slide > div.carousel-inner > div.item > img {
   width: 100%;
 }
 
-div#carousel-home > div.carousel-inner > div.item > div.carousel-caption > p {
+#carousel-home .carousel-caption > p {
     font-size: 20px;
     margin-left: 5%;
     margin-right: 5%;
 }
-div#carousel-home > div.carousel-inner > div.item > div.carousel-caption {
+#carousel-home .carousel-caption {
     bottom: 0;
     right: 0;
     left: 0;
 }
 
-@media screen and (max-height: 500px) {
-
-  div#carousel-home > div.carousel-inner > div.item > div.carousel-caption > h1  {
-      display: none;
-  }
-}
-
-@media screen and (max-width: 1000px) and (min-width: 700px) {
-  div#carousel-home.carousel.slide > div.carousel-inner > div.item > img {
-    height: 70vh;
-  }
-}
-
-/* SMARTPHONE */
-@media screen and (max-width: 500px) {
-
-  div#carousel-home > div.carousel-inner > div.item > div.carousel-caption > h1  {
+@media (min-width:320px)  {
+/* smartphones, iPhone, portrait 480x320 phones */
+  #carousel-home .carousel-caption > h1  {
       display: none;
   }
 
-  div#carousel-home > div.carousel-inner > div.item > div.carousel-caption > p {
-      font-size: 13px;
+  #carousel-home .carousel-caption > p {
+      font-size: 12px;
       margin: 0;
       margin-left: 2%;
       margin-right: 2%;
   }
-
-  div#carousel-home.carousel.slide > div.carousel-inner > div.item > img {
-    height: 50vh;
+}
+@media (min-width:481px)  {
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  #carousel-home .carousel-caption > h1  {
+      display: none;
   }
+
+  #carousel-home .carousel-caption > p {
+      font-size: 12px;
+      margin: 0;
+      margin-left: 2%;
+      margin-right: 2%;
+  }
+}
+@media (min-width:641px)  {
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+#carousel-home .carousel-caption > p {
+  font-size: 15px;
+}
+#carousel-home .carousel-caption > h1  {
+    display: none;
+}
+}
+@media (min-width:961px)  {
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+#carousel-home .carousel-caption > p {
+  font-size: 20px;
+}
+#carousel-home .carousel-caption > h1  {
+    display: block;
+}
+}
+@media (min-width:1025px) {
+/* big landscape tablets, laptops, and desktops */
+
+}
+@media (min-width:1281px) {
+/* hi-res laptops and desktops */
+
 }
