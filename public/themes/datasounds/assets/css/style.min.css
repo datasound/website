@@ -8860,7 +8860,6 @@ html .bg-parallax {
 
 div#carousel-home.carousel.slide > div.carousel-inner > div.item > img {
   width: 100%;
-  height: 100vh;
 }
 
 div#carousel-home > div.carousel-inner > div.item > div.carousel-caption > p {
