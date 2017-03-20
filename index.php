@@ -4,22 +4,20 @@ require_once 'vendor/autoload.php';
 use Blog\Manager;
 use Symfony\Component\Yaml\Yaml;
 
-include "env.php";
-
 function error_handler($error) {
   header("Location: /error/i-am-so-sorry");
 }
 
-if(getenv("env")=="production") {
+if(getenv("ENV") === "development") {
+  error_reporting(~E_NOTICE);
+} else {
   set_error_handler('error_handler');
   error_reporting(~E_ALL);
-} else {
-  error_reporting(~E_NOTICE);
 }
 
 try {
   # Getting configuration from config.json
-  $config = Yaml::parse(file_get_contents(("./config/" . ((getenv("env") == 'production') ? 'production' : 'development') .".yaml")), true);
+  $config = Yaml::parse(file_get_contents(("./config/" . ((getenv("ENV") == 'development') ? 'development' : 'production') .".yaml")), true);
 } catch(\Exception $e) {
   die($e->getMessage());
   exit;
@@ -45,6 +43,7 @@ $app->blog = new Manager($config);
 # Register $config array into the $app
 $app->config = $config;
 
+include("./routes/redirects.php");
 include("./routes/home.php");
 include("./routes/blog.php");
 include("./routes/errors.php");
