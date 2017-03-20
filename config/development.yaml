@@ -20,7 +20,7 @@ authors:
       twitter: RoccoOliveto
       facebook: rocco.oliveto.1
       email: "rocco@datasounds.io"
-      pic: roccooliveto.png
+      pic: roccooliveto.jpg
     rpareschi:
       name: Remo Pareschi
       role: Chief Business Officer
@@ -28,7 +28,7 @@ authors:
       twitter: remo_pareschi
       facebook: remo.pareschi
       email: "remo@datasounds.io"
-      pic: remopareschi.png
+      pic: remopareschi.jpg
     mattmezza:
       name: Matteo Merola
       role: Chief Technical Officer
@@ -62,7 +62,7 @@ authors:
       twitter:
       facebook: fiammetta.marulli
       email: "fiammetta.marulli@datasounds.io"
-      pic: fiammetta.png
+      pic: fiammetta.jpg
     stefano.dallapalma:
       name: Stefano Dalla Palma
       role: Research Assistant
@@ -103,7 +103,7 @@ authors:
       twitter:
       facebook: orazio.maitino
       email: "orazio.maitino@datasounds.io"
-      pic: orazio.png
+      pic: orazio.jpg
     vittorio:
       name: Vittorio Polverino
       role: Front-end Developer
