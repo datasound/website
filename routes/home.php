@@ -1,21 +1,17 @@
 <?php
-$app = new \Slim\App();
+$container = $app->getContainer();
+$container['view'] = new \Slim\Views\Handlebars(
+   'public/themes/'. $config['theme'] .'/views'
+);
+
 $app->get('/', function ($request, $response, $args) use ($app){
-  return $app->render(
-    'home',
-    array(
-        'app' => $app->config,
-        'title' => "Home"
-    ),
+
+    return $this->view->render(
+      $response,
+      'home',
+      array(
+          'app' => $app->config,
+          'title' => 'Home'
+      )
   );
 });
-$app->run();
-/*$app->respond('GET', '/', function ($request, $response, $service) use ($app) {
-  return $app->template->render(
-    'home',
-    array(
-        'app' => $app->config,
-        'title' => "Home"
-    )
-  );
-});*/

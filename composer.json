@@ -5,6 +5,9 @@
     "xamin/handlebars.php": "dev-master",
     "symfony/yaml": ">=3.2.1",
     "mattmezza/blog-manager": "^1.0",
-    "slim/slim": "^3.8"
+    "slim/slim": "^3.8",
+    "slim/twig-view": "^2.2",
+    "mattmezza/slim-handlebars-view": "^1.0",
+    "slim/php-view": "^2.2"
   }
 }
