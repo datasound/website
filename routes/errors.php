@@ -14,9 +14,9 @@ $app->get('/error/i-am-so-sorry', function ($request, $response, $args) use ($ap
     )
   );
 });
-// Override the default Slim Not Found Handler
-$container['notFoundHandler'] = function ($c){
-  return function ($request, $response, $args) use ($c) {
+// 404 not found
+$container['notFoundHandler'] = function ($c) use ($app){
+  return function ($request, $response, $args) use ($c, $app) {
       return $c['view']->render(
         $response,
         '404',
@@ -26,4 +26,19 @@ $container['notFoundHandler'] = function ($c){
       );
     };
 };
+
+// error 500
+$c = $app->getContainer();
+$c['phpErrorHandler'] = function ($c) use ($app){
+    return function ($request, $response, $error) use ($c, $app) {
+      return $c['view']->render(
+        $response,
+        '500',
+        array(
+            'app' => $app->config
+        )
+      );
+    };
+};
+
 ?>
