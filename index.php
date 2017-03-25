@@ -29,7 +29,11 @@ try {
 // if(ltrim($base, '/')){
 //    $_SERVER['REQUEST_URI'] = substr($_SERVER['REQUEST_URI'], strlen($base));
 // }
-$app = new \Slim\App();
+$app = new \Slim\App(array(
+  'settings' => [
+        'displayErrorDetails' => true
+    ]
+));
 date_default_timezone_set($config['timezone']);
 setlocale(LC_ALL, $config['locale']);
 
@@ -39,7 +43,8 @@ $app->blog = new Manager($config);
 # Register $config array into the $app
 $app->config = $config;
 
-include("./routes/redirects.php");
+/*include("./routes/redirects.php");
 include("./routes/home.php");
-
+include("./routes/blog.php");*/
+include("./routes/errors.php");
 $app->run();
