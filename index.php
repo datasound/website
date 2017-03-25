@@ -43,8 +43,8 @@ $app->blog = new Manager($config);
 # Register $config array into the $app
 $app->config = $config;
 
-/*include("./routes/redirects.php");
+include("./routes/redirects.php");
 include("./routes/home.php");
-include("./routes/blog.php");*/
+include("./routes/blog.php");
 include("./routes/errors.php");
 $app->run();
