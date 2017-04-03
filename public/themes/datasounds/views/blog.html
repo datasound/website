@@ -62,10 +62,10 @@
                             <div class="post-meta-special">
                                 <div class="posted-on">
                                     <span class="date">
-                                        {{#format_date_with_locale date '%e'}}
+                                    {{formatDate '' '%e'}}
                                     </span>
                                     <span class="month">
-                                        {{#format_date_with_locale date '%b'}}
+                                    {{formatDate '' '%b'}}
                                     </span>
                                 </div>
                                 <span class="post-type">
@@ -82,7 +82,7 @@
                         </div>
                         <div class="post-content">
                             <p class="text-justify">
-                              {{#excerpt body 80 ' […]'}}
+                              {{ellipsis body 80 '[…]'}}
                             </p>
                         </div>
                         <footer class="post-footer clearfix">
@@ -91,10 +91,10 @@
                                 <a href="#"><i class="fa fa-share-alt"></i> Share</a>
                                 <ul class="share-button clearfix">
                                     <li class="social-facebook">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u={{#urlencode url}}"><i class="fa fa-facebook"></i></a>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u={{url}}"><i class="fa fa-facebook"></i></a>
                                     </li>
                                     <li class="social-twitter">
-                                        <a href="https://twitter.com/home?status=Read%20this%20post%20by%20Datasound%20{{#urlencode url}}"><i class="fa fa-twitter"></i></a>
+                                        <a href="https://twitter.com/home?status=Read%20this%20post%20by%20Datasound%20{{url}}"><i class="fa fa-twitter"></i></a>
                                     </li>
                                 </ul>
                             </div>

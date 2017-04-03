@@ -30,7 +30,7 @@ $app->template->addHelper("urldecode",
                         function($template, $context, $args, $source){
                             return urldecode($context->get($args));
 });
-$app->template->addHelper("excerpt",
+$app->template->addHelper("ellipsis",
                         function($template, $context, $args, $source){
                           preg_match("/(.*?)\s+(.*?)\s+(?:(?:\"|\')(.*?)(?:\"|\'))/", trim($args), $m);
                           $keyname = $m[1];
@@ -55,7 +55,7 @@ $app->template->addHelper("excerpt",
                           }
                           return $value;
 });
-$app->template->addHelper("format_date_with_locale",
+$app->template->addHelper("formatDate",
                         function($template, $context, $args, $source){
                           preg_match("/(.*?)\s+(?:(?:\"|\')(.*?)(?:\"|\'))/", $args, $m);
                           $keyname = $m[1];
@@ -67,6 +67,7 @@ $app->template->addHelper("format_date_with_locale",
                             $localized_date = strftime($format, $date);
                           }
                           return $localized_date;
-});
+}
+);
 
  ?>
