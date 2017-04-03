@@ -40,7 +40,3 @@ Shows the home page.
 #### /slack
 
 Redirects to the slack channel (used internally).
-
-#### /i-am-so-sorry
-
-Shows the error page for any kind of crap that might happen in production.
