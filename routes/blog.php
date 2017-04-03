@@ -40,6 +40,39 @@ $app->get('/{year}/{month}/{name}', function ($request, $response, $args) use ($
   );
 });
 
+$app->get('/blog/{i:page}', function ($request, $response, $service) use ($app) {
+  $page = $args['page'];
+  $page = $page ? (int)$page : 1;
+  $posts = $app->blog->get_posts($page);
+  if(empty($posts) || $page < 1){
+    $app->abort(404);
+  }
+  return $this->view->render(
+    'blog',
+    array(
+        'app' => $app->config,
+        'posts' => $posts,
+        'page' => $page,
+        'has_pagination' => $app->blog->has_pagination($page)
+    )
+  );
+});
+
+$app->get('/{:page}', function ($request, $response, $service) use ($app) {
+  $pageName = $request->page;
+  $page = $app->blog->get_page($pageName);
+  if(!$page && $pageName != "blog") {
+    return $app->abort(404);
+  }
+  return $app->template->render(
+    'page',
+    array(
+        'app' => $app->config,
+        'page' => $page
+    )
+  );
+});
+
 // The JSON API
 $app->get('/api/json', function ($request, $response, $args) use ($app) {
   header('Content-type: application/json');
