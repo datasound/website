@@ -2,7 +2,7 @@
 
 [datasounds.io](datasounds.io) website
 
-- `git clone https://github.com/thedatasounds/website.git`
+- `git clone https://github.com/aparzi/website.git`
 - `composer install`
 - `ENV=development php -S localhost:8888`
 
