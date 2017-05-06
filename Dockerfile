@@ -42,7 +42,7 @@ RUN cd /var/www/site && composer install
 
 # Update the default apache site with the config we created.
 ADD config/apache-config.conf /etc/apache2/sites-enabled/000-default.conf
-ADD config/apache-config.conf /etc/apache2/sites-enabled/default-ssl.conf
+ADD config/apache-config-ssl.conf /etc/apache2/sites-enabled/default-ssl.conf
 
 # set up renewal
 # Add crontab file in the cron directory
