@@ -11,7 +11,7 @@ With Docker:
 - `docker build -t datasounds.io .`
 
 For the first time:
-- `docker run -i -t -p 80:80 443:443 datasounds.io /bin/bash`
+- `docker run -i -t -p 80:80 -p 443:443 datasounds.io /bin/bash`
 - `apachectl start`
 - `certbot -d datasounds.io`
 - Then Control+D to detach and exit after letsencrypt cet generation
