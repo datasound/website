@@ -17,7 +17,7 @@ For the first time:
 - Then Control+D to detach and exit after letsencrypt cet generation
 
 Any other time start like this:
-- `docker run -p 80:80 -d datasounds.io`
+- `docker run -p 80:80 -p 443:443 -d datasounds.io`
 
 
 ### Routes
