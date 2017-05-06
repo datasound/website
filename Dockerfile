@@ -26,6 +26,9 @@ ENV APACHE_PID_FILE /var/run/apache2.pid
 # Set the server name for the virtual host
 ENV SERVER_NAME serverone.datasounds.io
 
+# Adding server name to hosts
+RUN echo "${SERVER_NAME}    localhost" >> /etc/hosts
+
 # Expose apache.
 EXPOSE 80
 
