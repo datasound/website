@@ -50,7 +50,10 @@ ADD config/letsencrypt.sh /etc/apache2/letsencrypt.sh
 RUN chmod a+x /etc/apache2/letsencrypt.sh
 
 # set up renewal
-RUN (crontab -l ; echo "15 3 * * * /usr/bin/certbot renew --quiet")| crontab -
+# Add crontab file in the cron directory
+ADD config/letsencrypt_cron /etc/cron.d/letsencrypt_cron
+# Give execution rights on the cron job
+RUN chmod 0644 /etc/cron.d/letsencrypt_cron
 
 # By default start up apache in the foreground, override with /bin/bash for interative.
 CMD /usr/sbin/apache2ctl -D FOREGROUND
