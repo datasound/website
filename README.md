@@ -2,9 +2,22 @@
 
 [datasounds.io](datasounds.io) website
 
-- `git clone https://github.com/thedatasounds/website.git`
+- `git clone https://github.com/thedatasounds/website.git && cd $_`
 - `composer install`
 - `ENV=development php -S localhost:8888`
+
+With Docker:
+- `git clone https://github.com/thedatasounds/website.git && cd $_`
+- `docker build -t datasounds.io .`
+
+For the first time:
+- `docker run -i -t -p 80:80 datasounds.io /bin/bash`
+- `apachectl start`
+- `certbot -d datasounds.io`
+- Then Control+D to detach and exit after letsencrypt cet generation
+
+Any other time start like this:
+- `docker run -p 80:80 -d datasounds.io`
 
 
 ### Routes

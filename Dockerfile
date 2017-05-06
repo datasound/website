@@ -12,6 +12,7 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
 # Enable apache mods.
 RUN a2enmod php7.0
 RUN a2enmod rewrite
+RUN a2enmod ssl
 
 # Update the PHP.ini file, enable <? ?> tags and quieten logging.
 RUN sed -i "s/short_open_tag = Off/short_open_tag = On/" /etc/php/7.0/apache2/php.ini
@@ -41,13 +42,6 @@ RUN cd /var/www/site && composer install
 
 # Update the default apache site with the config we created.
 ADD config/apache-config.conf /etc/apache2/sites-enabled/000-default.conf
-
-# Pass the ENV variables
-# RUN sed -e "s/\${SERVER_NAME}/${SERVER_NAME}/" -e "s/\${APACHE_LOG_DIR}/${APACHE_LOG_DIR}/" /etc/apache2/sites-enabled/000-default.conf > /etc/apache2/sites-enabled/000-default.conf
-
-# add let's encrypt script
-ADD config/letsencrypt.sh /etc/apache2/letsencrypt.sh
-RUN chmod a+x /etc/apache2/letsencrypt.sh
 
 # set up renewal
 # Add crontab file in the cron directory
