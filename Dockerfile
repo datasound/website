@@ -45,8 +45,10 @@ ADD config/apache-config.conf /etc/apache2/sites-enabled/000-default.conf
 # Pass the ENV variables
 # RUN sed -e "s/\${SERVER_NAME}/${SERVER_NAME}/" -e "s/\${APACHE_LOG_DIR}/${APACHE_LOG_DIR}/" /etc/apache2/sites-enabled/000-default.conf > /etc/apache2/sites-enabled/000-default.conf
 
-# use let's encrypt
-RUN certbot --email mattmezza@gmail.com --agree-tos --apache -d ${SERVER_NAME} --non-interactive
+# add let's encrypt script
+ADD conf/letsencrypt.sh /etc/apache2/letsencrypt.sh
+RUN chmod a+x /etc/apache2/letsencrypt.sh
+
 # set up renewal
 RUN (crontab -l ; echo "15 3 * * * /usr/bin/certbot renew --quiet")| crontab -
 
