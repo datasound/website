@@ -31,7 +31,7 @@ ENV SERVER_NAME serverone.datasounds.io
 RUN echo "${SERVER_NAME}    localhost" >> /etc/hosts
 
 # Expose apache.
-EXPOSE 80
+EXPOSE 80 443
 
 # Copy this repo into place.
 ADD . /var/www/site
