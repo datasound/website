@@ -8925,3 +8925,18 @@ html .bg-parallax {
 /* hi-res laptops and desktops */
 
 }
+
+.community-images {
+  display: block;
+  justify-content: center;
+}
+
+@media (min-width: 500px) {
+  .community-images {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
