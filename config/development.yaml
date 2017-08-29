@@ -55,22 +55,6 @@ authors:
       facebook: angelo.m.parziale
       email: "angelo.parziale@datasounds.io"
       pic: angelo.jpg
-    drusso:
-      name: Davide<br />Russo
-      role: Research Assistant
-      bio: Just a simple bio here...
-      twitter:
-      facebook: davide.russo.7927
-      email: "davide.russo@datasounds.io"
-      pic: davide.jpg
-    cicciog:
-      name: Francesco Gualtieri
-      role: DevOps engineer
-      bio: Just a simple bio here...
-      twitter:
-      facebook: francesco.gualtieri.12
-      email: "francesco.gualtieri@datasounds.io"
-      pic: francesco.jpg
     lorenzo:
       name: Lorenzo Verde
       role: DevOps engineer
@@ -80,21 +64,13 @@ authors:
       email: "lorenzo.verde@datasounds.io"
       pic: lorenzo.jpg
     stefano.dallapalma:
-      name: Stefano <br /> Dalla Palma
+      name: Stefano Dalla Palma
       role: Research Assistant
       bio: Just a simple bio here...
       twitter:
       facebook: stefano.d.palma
       email: "stefano.dallapalma@datasounds.io"
       pic: stefano.jpg
-    vittorio:
-      name: Vittorio Polverino
-      role: DevOps engineer
-      bio: Just a simple bio here...
-      twitter:
-      facebook: vitpolverino
-      email: "vittorio.polverino@datasounds.io"
-      pic: vittorio.jpg
 theme: datasounds
 posts:
   dir: posts
