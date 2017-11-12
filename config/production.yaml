@@ -1,10 +1,10 @@
 timezone: Europe/Rome
 locale: it_IT.UTF-8
-url: https://datasounds.io
-title: Datasounds
+url: https://www.datasound.it
+title: datasound
 description: "Data start to play..."
 logo: logo.png
-email: hello@datasounds.io
+email: hello@datasound.it
 address: C.da Fonte Lappone, 86090 Pesche IS Italy
 phone: "+39 0874404159"
 links:
@@ -19,7 +19,7 @@ authors:
       bio: Just a simple bio here...
       twitter: RoccoOliveto
       facebook: rocco.oliveto.1
-      email: "rocco@datasounds.io"
+      email: "rocco@datasound.it"
       pic: roccooliveto.jpg
     rpareschi:
       name: Remo Pareschi
@@ -27,7 +27,7 @@ authors:
       bio: Just a simple bio here...
       twitter: remo_pareschi
       facebook: remo.pareschi
-      email: "remo@datasounds.io"
+      email: "remo@datasound.it"
       pic: remopareschi.jpg
     mattmezza:
       name: Matteo Merola
@@ -36,7 +36,7 @@ authors:
       linkedin: matteomerola
       twitter: _mattmezza_
       facebook: matteo.merola
-      email: "matteo@datasounds.io"
+      email: "matteo@datasound.it"
       pic: matt.jpeg
     s.scalabrino:
       name: Simone Scalabrino
@@ -44,32 +44,16 @@ authors:
       bio: Just a simple bio here...
       twitter: SimonScalabrino
       facebook: simone.scalabrino
-      email: "simone@datasounds.io"
+      email: "simone@datasound.it"
       pic: simone.jpg
   developers:
-    angeloparziale:
-      name: Angelo Parziale
-      role: DevOps engineer
-      bio: Just a simple bio here...
-      twitter:
-      facebook: angelo.m.parziale
-      email: "angelo.parziale@datasounds.io"
-      pic: angelo.jpg
-    lorenzo:
-      name: Lorenzo Verde
-      role: DevOps engineer
-      bio: Just a simple bio here...
-      twitter:
-      facebook: lorenzo.verde.315
-      email: "lorenzo.verde@datasounds.io"
-      pic: lorenzo.jpg
     stefano.dallapalma:
       name: Stefano <br /> Dalla Palma
       role: Research Assistant
       bio: Just a simple bio here...
       twitter:
       facebook: stefano.d.palma
-      email: "stefano.dallapalma@datasounds.io"
+      email: "stefano.dallapalma@datasound.it"
       pic: stefano.jpg
 theme: datasounds
 posts:
