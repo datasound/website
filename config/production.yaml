@@ -46,15 +46,33 @@ authors:
       facebook: simone.scalabrino
       email: "simone@datasound.it"
       pic: simone.jpg
-  developers:
-    stefano.dallapalma:
-      name: Stefano <br /> Dalla Palma
-      role: Research Assistant
+  scientists:
+    vito.chiuri:
+      name: Vito Chiuri
+      role: Chief Operation Officer
       bio: Just a simple bio here...
-      twitter:
-      facebook: stefano.d.palma
-      email: "stefano.dallapalma@datasound.it"
+      twitter: 
+      facebook: 
+      email: "vito@datasound.it"
+      pic: sconosciuto.jpg
+    damian.tamburri:
+      name: Damian Andrew Tamburri
+      role: Chief Financial Officer
+      bio: Just a simple bio here...
+      twitter: maelstromdat
+      facebook: damian.tamburri
+      linkedin: maelstrom
+      email: "damian@datasound.it"
+      pic: damian.jpg
+    stefano.dallapalma:
+      name: Stefano Dalla Palma
+      role: Project Manager
+      bio: Just a simple bio here...
+      linkedin: stefanodallapalma
+      twitter: stefanodp0
+      email: "stefano@datasound.it"
       pic: stefano.jpg
+
 theme: datasounds
 posts:
   dir: posts

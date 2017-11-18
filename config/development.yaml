@@ -19,7 +19,7 @@ authors:
       bio: Just a simple bio here...
       twitter: RoccoOliveto
       facebook: rocco.oliveto.1
-      email: "rocco@datasounds.io"
+      email: "rocco@datasound.it"
       pic: roccooliveto.jpg
     rpareschi:
       name: Remo Pareschi
@@ -27,7 +27,7 @@ authors:
       bio: Just a simple bio here...
       twitter: remo_pareschi
       facebook: remo.pareschi
-      email: "remo@datasounds.io"
+      email: "remo@datasound.it"
       pic: remopareschi.jpg
     mattmezza:
       name: Matteo Merola
@@ -36,7 +36,7 @@ authors:
       linkedin: matteomerola
       twitter: _mattmezza_
       facebook: matteo.merola
-      email: "matteo@datasounds.io"
+      email: "matteo@datasound.it"
       pic: matt.jpeg
     s.scalabrino:
       name: Simone Scalabrino
@@ -44,32 +44,33 @@ authors:
       bio: Just a simple bio here...
       twitter: SimonScalabrino
       facebook: simone.scalabrino
-      email: "simone@datasounds.io"
+      email: "simone@datasound.it"
       pic: simone.jpg
-  developers:
-    angeloparziale:
-      name: Angelo Parziale
-      role: DevOps engineer
+  scientists:
+    vito.chiuri:
+      name: Vito Chiuri
+      role: Chief Operation Officer
       bio: Just a simple bio here...
-      twitter:
-      facebook: angelo.m.parziale
-      email: "angelo.parziale@datasounds.io"
-      pic: angelo.jpg
-    lorenzo:
-      name: Lorenzo Verde
-      role: DevOps engineer
+      twitter: 
+      facebook: 
+      email: "vito@datasound.it"
+      pic: sconosciuto.jpg
+    damian.tamburri:
+      name: Damian Andrew Tamburri
+      role: Chief Financial Officer
       bio: Just a simple bio here...
-      twitter:
-      facebook: lorenzo.verde.315
-      email: "lorenzo.verde@datasounds.io"
-      pic: lorenzo.jpg
+      twitter: maelstromdat
+      facebook: damian.tamburri
+      linkedin: maelstrom
+      email: "damian@datasound.it"
+      pic: damian.jpg
     stefano.dallapalma:
       name: Stefano Dalla Palma
-      role: Research Assistant
+      role: Project Manager
       bio: Just a simple bio here...
-      twitter:
-      facebook: stefano.d.palma
-      email: "stefano.dallapalma@datasounds.io"
+      linkedin: stefanodallapalma
+      twitter: stefanodp0
+      email: "stefano@datasound.it"
       pic: stefano.jpg
 theme: datasounds
 posts:

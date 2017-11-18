@@ -5,7 +5,7 @@
                 <i class="dslc-icon dslc-icon-as-profile-male"></i>
             </div>
             <h1>
-                    The datasounds Team
+                    The datasound Team
                 </h1>
             <p><em>"Many ideas grow better when transplanted into another mind than in the one where they sprang up."</em> (Oliver Wendell Holmes, Sr.)</p>
             <p>
@@ -27,12 +27,16 @@
                           <h4 class="user-name" style="font-size: 20px;">{{name}}</h4>
                           <div class="user-position" style="font-size: 16px;">{{role}}</div>
                           <ul class="social social-circle">
+                              {{#if twitter}}
                               <li>
                                   <a href="https://twitter.com/{{twitter}}"><i class="fa fa-twitter"></i></a>
                               </li>
+                              {{/if}}
+                              {{#if facebook}}
                               <li>
                                   <a href="https://facebook.com/{{facebook}}"><i class="fa fa-facebook"></i></a>
                               </li>
+                              {{/if}}
                               {{#if linkedin}}
                               <li>
                                   <a href="https://linkedin.com/in/{{linkedin}}"><i class="fa fa-linkedin"></i></a>
@@ -45,7 +49,6 @@
               {{/each}}
             </div>
             <div class="row">
-              <div class="col-md-4">&nbsp;</div>
               {{#each app.authors.scientists}}
               <div class="col-xs-12 col-sm-6 col-md-3 col-centered">
                   <div class="user-type-1">
@@ -56,47 +59,27 @@
                           <h4 class="user-name">{{{name}}}</h4>
                           <div class="user-position">{{role}}</div>
                           <ul class="social social-circle">
-                              <!-- <li>
+	                      {{#if twitter}}
+                              <li>
                                   <a href="https://twitter.com/{{twitter}}"><i class="fa fa-twitter"></i></a>
-                              </li> -->
-                              <!-- <li>
+                              </li> 
+			     {{/if}}
+	                      {{#if facebook}}
+                              <li>
                                   <a href="https://facebook.com/{{facebook}}"><i class="fa fa-facebook"></i></a>
                               </li>
-                              <li>
-                                  <a href="https://linkedin.com/pub/{{linkedin}}"><i class="fa fa-linkedin"></i></a>
-                              </li> -->
+			     {{/if}}
+	                      {{#if linkedin}}        
+			      <li>
+                                  <a href="https://linkedin.com/in/{{linkedin}}"><i class="fa fa-linkedin"></i></a>
+                              </li>
+			     {{/if}}
                           </ul>
                       </div>
                   </div>
               </div>
               {{/each}}
               <div class="col-md-4">&nbsp;</div>
-            </div>
-            <div class="community-images center-block">
-              {{#each app.authors.developers}}
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                  <div class="user-type-1">
-                      <div class="user-thumbnail">
-                          <img src="{{app.url}}/public/content/{{pic}}" alt="{{name}}'s picture'">
-                      </div>
-                      <div class="user-content">
-                          <h4 class="user-name">{{{name}}}</h4>
-                          <div class="user-position">{{role}}</div>
-                          <ul class="social social-circle">
-                              <!-- <li>
-                                  <a href="https://twitter.com/{{twitter}}"><i class="fa fa-twitter"></i></a>
-                              </li> -->
-                              <!-- <li>
-                                  <a href="https://facebook.com/{{facebook}}"><i class="fa fa-facebook"></i></a>
-                              </li>
-                              <li>
-                                  <a href="https://linkedin.com/pub/{{linkedin}}"><i class="fa fa-linkedin"></i></a>
-                              </li> -->
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-              {{/each}}
             </div>
         </div>
     </div>
