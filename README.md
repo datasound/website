@@ -1,6 +1,6 @@
 # Datasounds
 
-[datasounds.io](datasounds.io) website
+[datasound.it](datasound.it) website
 
 - `git clone https://github.com/thedatasounds/website.git`
 - `composer install`

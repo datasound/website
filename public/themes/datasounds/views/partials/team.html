@@ -18,7 +18,7 @@
         <div class="user-section-content">
             <div class="row">
               {{#each app.authors.lead}}
-              <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="col-xs-12 col-sm-6 col-md-4">
                   <div class="user-type-1">
                       <div class="user-thumbnail">
                           <img src="{{app.url}}/public/content/{{pic}}" alt="{{name}}'s picture'">
@@ -29,17 +29,22 @@
                           <ul class="social social-circle">
                               {{#if twitter}}
                               <li>
-                                  <a href="https://twitter.com/{{twitter}}"><i class="fa fa-twitter"></i></a>
+                                  <a href="https://twitter.com/{{twitter}}" target="_blank"><i class="fa fa-twitter"></i></a>
                               </li>
                               {{/if}}
                               {{#if facebook}}
                               <li>
-                                  <a href="https://facebook.com/{{facebook}}"><i class="fa fa-facebook"></i></a>
+                                  <a href="https://facebook.com/{{facebook}}" target="_blank"><i class="fa fa-facebook"></i></a>
                               </li>
                               {{/if}}
                               {{#if linkedin}}
                               <li>
-                                  <a href="https://linkedin.com/in/{{linkedin}}"><i class="fa fa-linkedin"></i></a>
+                                  <a href="https://linkedin.com/in/{{linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a>
+                              </li>
+                              {{/if}}
+                              {{#if linkedincompany}}
+                              <li>
+                                  <a href="https://linkedin.com/company/{{linkedincompany}}" target="_blank"><i class="fa fa-linkedin"></i></a>
                               </li>
                               {{/if}}
                           </ul>
@@ -50,7 +55,7 @@
             </div>
             <div class="row">
               {{#each app.authors.scientists}}
-              <div class="col-xs-12 col-sm-6 col-md-3 col-centered">
+              <div class="col-xs-12 col-sm-6 col-md-4 col-centered">
                   <div class="user-type-1">
                       <div class="user-thumbnail">
                           <img src="{{app.url}}/public/content/{{pic}}" alt="{{name}}'s picture'">
@@ -61,19 +66,24 @@
                           <ul class="social social-circle">
 	                      {{#if twitter}}
                               <li>
-                                  <a href="https://twitter.com/{{twitter}}"><i class="fa fa-twitter"></i></a>
+                                  <a href="https://twitter.com/{{twitter}}" target="_blank"><i class="fa fa-twitter"></i></a>
                               </li> 
 			     {{/if}}
 	                      {{#if facebook}}
                               <li>
-                                  <a href="https://facebook.com/{{facebook}}"><i class="fa fa-facebook"></i></a>
+                                  <a href="https://facebook.com/{{facebook}}" target="_blank"><i class="fa fa-facebook"></i></a>
                               </li>
 			     {{/if}}
 	                      {{#if linkedin}}        
 			      <li>
-                                  <a href="https://linkedin.com/in/{{linkedin}}"><i class="fa fa-linkedin"></i></a>
+                                  <a href="https://linkedin.com/in/{{linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a>
                               </li>
 			     {{/if}}
+			     {{#if linkedincompany}}
+                              <li>
+                                  <a href="https://linkedin.com/company/{{linkedincompany}}" target="_blank"><i class="fa fa-linkedin"></i></a>
+                              </li>
+                              {{/if}}
                           </ul>
                       </div>
                   </div>
